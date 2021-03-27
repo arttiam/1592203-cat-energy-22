@@ -8,7 +8,6 @@
     <header class="page-header">
       <a class="page-header__logo">
         <img src="img/logo/logo-mobile-cat.svg" width="33" height="38" alt="логотип мобильный">
-        <img src="img/logo/logo-2.svg" width="101" height="18" alt="кот энерджи">
       </a>
       <nav class="main-nav">
         <ul class="main-nav__list">
@@ -34,7 +33,7 @@
         <h1 class="functional-food__title">Функциональное питание для котов</h1>
         <p class="functional-food__slogan">Занялся собой? Займись котом!</p>
         <img src="img/logo/logo-product.jpg" alt="Логоьтп продукта" width="280" height="270">
-        <a href="form.html" class="button functional-food__link-choose-program">подобрать программу</a>
+        <a href="form.html" class="button functional-food__link">подобрать программу</a>
       </div>
     </header>
 
@@ -42,61 +41,61 @@
 
       <section class="effect">
         <h2 class="visually-hidden">Эфект от продукта</h2>
-        <div class="effect__weight-loss">
-          <h3 class="effect__weight-loss__title">похудение</h3>
-          <p class="effect__weight-loss__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a href="catalog.html" class="effect__weight-loss__catalog-slim-link">
-            каталог slim
-          </a>
-        </div>
-        <div class="effect__weight-gain">
-          <h3 class="effect__weight-gain__title">Набор массы</h3>
-          <p class="effect__weight-gain__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a href="catalog.html" class="effect__weight-gain__catalog-fat">каталог pro</a>
-        </div>
+        <ul class="effect__list">
+          <li class="effect__item effect__item--weight-loss">
+            <h3 class="effect__item-title">похудение</h3>
+            <p class="effect__item-text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <a href="catalog.html" class="effect__item-link">каталог slim</a>
+          </li>
+          <li class="effect__item effect__item--weight-gain">
+            <h3 class="effect__item-itle">Набор массы</h3>
+            <p class="effect__item-text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <a href="catalog.html" class="effect__item-link">каталог pro</a>
+          </li>
+        </ul>
       </section>
 
       <section class="product-descriptions">
-        <h2 class="product-descriptions__title">Как это работает</h2>
+        <h2 class="product-descriptions__title heading-seconadry">Как это работает</h2>
         <ul class="product-descriptions__list">
-          <li class="product-descriptions__item">
+          <li class="product-descriptions__item product-descriptions__item--utility">
             Функциональное питание содержит только полезные питательные вещества.
           </li>
-          <li class="product-descriptions__item">
+          <li class="product-descriptions__item product-descriptions__item--convenience">
             Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
           </li>
-          <li class="product-descriptions__item">
+          <li class="product-descriptions__item product-descriptions__item--economy">
             Замените один-два приема обычной еды на наше функциональное питание.
           </li>
-          <li class="product-descriptions__item">
+          <li class="product-descriptions__item product-descriptions__item--quickness">
             Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
           </li>
         </ul>
       </section>
 
       <section class="example">
-        <h2 class="example__title">Живой пример</h2>
+        <h2 class="example__title heading-seconadry">Живой пример</h2>
         <p class="example__text">
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
-        <div class="example__parameters">
-          <div class="example__parameters__quantity parameters-weight">
-            <p class="parameters-weight__text">
+        <ul class="example__list">
+          <li class="example__item">
+            <p class="example__text">
               5 кг
             </p>
-            <p class="parameters-weight__desc">
+            <p class="example__desc">
               снижение веса
             </p>
-          </div>
-          <div class="example__parameters__quantity parameters-days">
-            <p class="parameters-days__text">
+          </li>
+          <li class="example__item">
+            <p class="example__text">
               60 дней
             </p>
-            <p class="parameters-days__desc">
+            <p class="example__desc">
               затрачено времени
             </p>
-          </div>
-        </div>
+          </li>
+        </ul>
         <p class="example__result">Затраты на питание: 15 000 РУБ.</p>
         <label class="visually-hidden" for="selectingResult">Выбор результата</label>
         <span class="example__start">было</span><input class="example__selecting-result" type="range" name="selectingResult"><span class="example__end">стало</span>
@@ -106,7 +105,7 @@
         <h2 class="visually-hidden">Как нас найти</h2>
         <div class="our-address__address address">
           <p class="address__invitation">приглашаем к сотрудничеству дилеров!</p>
-          <p class="address__contacn">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <address class="address__contacn">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
         <div class="our-address__map map">
           <img class="map__image" src="img/different/location.png" width="320" height="362" alt="Как нас найти">
@@ -116,30 +115,35 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer__logo">
-        <a class="page-footer__logo__link" href="#"><img src="img/logo/logo-2.svg" width="128" height="24" alt="Логотип"></a>
+        <a class="page-footer__link"><img src="img/logo/logo-2.svg" width="128" height="24" alt="Логотип"></a>
       </div>
       <div class="page-footer__social social">
         <ul class="social_list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Мы в Вконтакте</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+              <span class="visually-hidden">Мы в Фейсбуке</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+              <span class="visually-hidden">Мы в Инстаграме</span>
+            </a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <ul class="copyright_list">
-          <li class="copyright__item">
-            HTML Academy
-          </li>
-          <li class="copyright__item">
-            <img src="img/logo/htmlacademy.svg" width="27" height="34" alt="Логотип htmlacademy">
-          </li>
-        </ul>
+        <p class="copyright__text"><a class="copyright__text-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></p>
+        <a class="copyright__logo-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg class="copyright__logo" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#666666"/>
+          </svg>
+          <span class="visually-hidden">Логотип HTML Academy</span>
+        </a>
       </div>
     </footer>
   </body>
