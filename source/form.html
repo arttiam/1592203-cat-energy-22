@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+  <body class="page-body">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="img/logo/logo-mobile-cat.svg" width="33" height="38" alt="логотип мобильный">
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a>
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="catalog.html">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--active">
+            <a href="form.html">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      </nav>
+    </header>
+
+    <main class="page-main page-main--font">
+      <h1 class="page-main-program__title">Подбор программы</h1>
+      <p class="page-main-program__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <form class="program-selection" method="post" action="https://echo.htmlacademy.ru">
+        <fieldset class="program-selection__cat-parameters cat-parameters">
+          <ul class="cat-parameters__list">
+            <li class="cat-parameters__item"><label class="program-selection__label program-selection__label--field" for="name">Имя:*</label><input class="program-selection__field program-selection__field--name" type="text" id="name" name="name-field" placeholder="барсик"></li>
+            <li class="cat-parameters__item"><label class="program-selection__label program-selection__label--field" for="weight">Вес(кг):*</label><input class="program-selection__field program-selection__field--weight" type="text" id="weight" name="weight-field" placeholder="7"></li>
+            <li class="cat-parameters__item"><label class="program-selection__label program-selection__label--field" for="age">Имя:*</label><input class="program-selection__field program-selection__field--age" type="text" id="age" name="age-field" placeholder="7"></li>
+          </ul>
+        </fieldset>
+        <fieldset class="program-selection__target-programs target-programs">
+          <ul class="target-programs__list">
+            <li class="target-programs__item">
+              <input class="target-programs__weight-loss" type="radio" name="weight-loss" checked><label class="program-selection__label" for="weight-loss">Похудение</label>
+            </li>
+            <li class="target-programs__item">
+              <input class="target-programs__weight-gain" type="radio" name="weight-gain"><label class="program-selection__label" for="weight-gain">Набор веса</label>
+            </li>
+            <li class="target-programs__item">
+              <input class="target-programs__not-certainty" type="radio" name="not-certainty"><label class="program-selection__label" for="not-certainty">Не знаю (Нужен ваш совет)</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="program-selection__contact contact">
+          <h2 class="contact__title heading-program">Контактные данные (владельца кота)</h2>
+          <ul class="contact__list">
+            <li class="contact__item"><label class="program-selection__label program-selection__label--field" for="email">E-mail:*</label><input class="program-selection__field program-selection__field--email" type="text" id="email" name="email-field" placeholder="kuklachev@gmail.com"></li>
+            <li class="contact__item"><label class="program-selection__label program-selection__label--field" for="tel">Телефон:*</label><input class="program-selection__field program-selection__field--tel" type="tel" id="tel" name="tel-field" placeholder="8 (960) 900-60-90"></li>
+          </ul>
+        </fieldset>
+        <fieldset class="program-selection__comment comment">
+          <h2 class="comment__title heading-program">Комментарий</h2>
+          <label class="visually-hidden" for="comment">Текст комментария</label>
+          <textarea class="comment__area" id="comment" name="comment-field"></textarea>
+        </fieldset>
+        <fieldset class="program-selection__additional-information additional-information">
+          <h2 class="additional-information__title heading-program">Дополнительно</h2>
+          <ul class="additional-information__list">
+            <li class="additional-information__item">
+              <input class="additional-information__checkbox" type="checkbox" id="sweetener" name="sweetener-checkbox" checked>
+              <label class="program-selection__label program-selection__label--checkbox" for="sweetener">сахарозаменитель</label>
+            </li>
+            <li class="additional-information__item">
+              <input class="additional-information__checkbox" type="checkbox" id="drinking-water" name="drinking-water-checkbox">
+              <label class="program-selection__label program-selection__label--checkbox" for="drinking-water">питьевая вода</label>
+            </li>
+            <li class="additional-information__item">
+              <input class="additional-information__checkbox" type="checkbox" id="milk" name="milk-checkbox">
+              <label class="program-selection__label program-selection__label--checkbox" for="milk">молоко</label>
+            </li>
+            <li class="additional-information__item">
+              <input class="additional-information__checkbox" type="checkbox" id="vitamins" name="vitamins-checkbox">
+              <label class="program-selection__label program-selection__label--checkbox" for="vitamins">витамины</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="button program-selection__button" type="submit">отправить заявку</button>
+        <p class="program-selection__legend">* — Обязательные поля</p>
+      </form>
+      <section class="our-address our-address--font">
+        <h2 class="visually-hidden">Как нас найти</h2>
+        <div class="our-address__address address">
+          <p class="address__invitation">приглашаем к сотрудничеству дилеров!</p>
+          <address class="address__contacn">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        </div>
+        <div class="our-address__map map">
+          <img class="map__image" src="img/different/location.png" width="320" height="362" alt="Как нас найти">
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__logo">
+        <a class="page-footer__link"><img src="img/logo/logo-2.svg" width="128" height="24" alt="Логотип"></a>
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Мы в Вконтакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+              <span class="visually-hidden">Мы в Фейсбуке</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+              <span class="visually-hidden">Мы в Инстаграме</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <a class="copyright__text copyright__text-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+          <svg class="copyright__logo" width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#666666"/>
+          </svg>
+        </a>
+      </div>
+    </footer>
+  </body>
+  </html>
