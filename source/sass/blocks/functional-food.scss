@@ -1,8 +1,10 @@
 .functional-food {
+  width: 320px;
   background: url("../img/background/foot-header-cat.jpg") $basic-green;
 }
 
 .functional-food__title {
+  margin: 0 auto;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -11,6 +13,7 @@
 }
 
 .functional-food__slogan {
+  margin: 0 auto;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;

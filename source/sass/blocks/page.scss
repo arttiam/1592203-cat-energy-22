@@ -2,14 +2,15 @@
   height: 100%;
 }
 
-.page-body {
-  font-family: 'Arial', sans-serif;
+.page__body {
+  font-family: "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
   line-height: 18px;
+  color: $special-dark-grey;
+  min-width: 320px;
   min-height: 100%;
   margin: 0;
   padding: 0;
-  width: 320px;
 }
