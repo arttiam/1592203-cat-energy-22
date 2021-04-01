@@ -7,6 +7,10 @@
   list-style: none;
 }
 
-.product-descriptions__item:not(:last-child) {
+.product-descriptions__item {
   margin-bottom: 20px;
+}
+
+.product-descriptions__item--quickness {
+  margin-bottom: 0;
 }
