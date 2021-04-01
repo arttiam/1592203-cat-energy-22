@@ -27,14 +27,16 @@ body {
   color: $basic-black;
 }
 
-img { 
+img {
   max-width: 100%;
 }
 
-a { 
-  text-decoration: none; 
+a {
+  text-decoration: none;
 }
 
-*, *::before, *::after { 
-  box-sizing: border-box; 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
