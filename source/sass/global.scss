@@ -24,4 +24,17 @@ body {
   font-style: normal;
   font-size: 36px;
   line-height: 40px;
+  color: $basic-black;
+}
+
+img { 
+  max-width: 100%;
+}
+
+a { 
+  text-decoration: none; 
+}
+
+*, *::before, *::after { 
+  box-sizing: border-box; 
 }

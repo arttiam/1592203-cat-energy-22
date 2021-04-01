@@ -13,7 +13,6 @@
 
 .main-nav__link {
   display: inline-block;
-  box-sizing: border-box;
   padding: 22px 70px 24px 69px;
   min-width: 320px;
   font-family: "Oswald", "Arial", sans-serif;
@@ -22,5 +21,6 @@
   font-size: 20px;
   line-height: 20px;
   text-align: center;
+  color: $basic-black;
   text-transform: uppercase;
 }
