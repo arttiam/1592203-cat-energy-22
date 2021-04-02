@@ -1,0 +1,43 @@
+.example {
+  padding: 27px 20px 25px 20px;
+  background: $basic-grey;
+}
+
+.example__list {
+  list-style: none;
+}
+
+.example__item-text {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 24px;
+  color: $basic-black;
+  text-transform: uppercase;
+}
+
+.example__desc {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.example__result {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: $basic-black;
+  text-transform: uppercase;
+}
+
+.example__restriction {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: $basic-black;
+  text-transform: uppercase;
+}
