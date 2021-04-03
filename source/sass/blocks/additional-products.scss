@@ -15,9 +15,6 @@
 .additional-products__text {
   display: flex;
   justify-content: space-between;
-  color: $basic-white;
-  width: 161px;
-  text-align: center;
 }
 
 .additional-products__stocks {
@@ -32,4 +29,10 @@
   justify-content: space-between;
   align-items: center;
   min-height: 190px;
+}
+
+.additional-products__stocks-text {
+  color: $basic-white;
+  width: 161px;
+  text-align: center;
 }
