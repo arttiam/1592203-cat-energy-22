@@ -1,0 +1,21 @@
+.energy-food__link {
+  background-color: $basic-grey;
+  color: $special-dark-grey;
+  margin-bottom: 25px;
+}
+
+.energy-food__title {
+  text-align: center;
+  color: $special-black;
+  text-transform: uppercase;
+}
+
+.energy-food__text {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 16;
+}
+
+.energy-food__more-wrapper {
+  border-bottom: 1px solid $dark-grey;
+}

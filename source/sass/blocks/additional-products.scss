@@ -1,0 +1,38 @@
+.additional-products-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.additional-products__item {
+  border-bottom: 1px solid $special-light-grey;
+}
+
+.additional-products__link {
+  margin-bottom: 19px;
+}
+
+.additional-products__text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.additional-products__stocks {
+  background: url("../img/background/additional-products.png");
+  min-height: 289px;
+  padding-top: 58px;
+}
+
+.additional-products__stocks-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 190px;
+}
+
+.additional-products__stocks-text {
+  color: $basic-white;
+  width: 161px;
+  text-align: center;
+}
