@@ -1,9 +1,10 @@
-.main_nav {
+.main-nav {
   width: 320px;
 }
 
 .main-nav__list {
   list-style: none;
+  margin: 0;
   padding: 0;
 }
 
@@ -15,6 +16,7 @@
   display: inline-block;
   padding: 22px 70px 24px 69px;
   min-width: 320px;
+  border-bottom: 1px solid $special-light-grey;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 500;
   font-style: normal;
