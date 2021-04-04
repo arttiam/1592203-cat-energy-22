@@ -13,4 +13,8 @@
   min-height: 100%;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
 }

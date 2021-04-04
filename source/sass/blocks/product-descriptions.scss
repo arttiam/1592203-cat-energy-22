@@ -5,6 +5,12 @@
 .product-descriptions__list {
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .product-descriptions__item {
@@ -13,4 +19,11 @@
 
 .product-descriptions__item--quickness {
   margin-bottom: 0;
+}
+
+.product-descriptions__title {
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }

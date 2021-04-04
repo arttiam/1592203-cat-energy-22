@@ -4,7 +4,17 @@
     url("../img/background/foot-header-cat.jpg") no-repeat;
   text-align: center;
   padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    background: url("../img/background/logo-product.jpg") no-repeat;
+    background-position: bottom;
+    text-align: left;
+    margin: 0 30px;
+    min-height: 812px;
+    padding: 0;
+  }
 }
+
 
 .functional-food__title {
   margin: 0 auto;
@@ -14,6 +24,13 @@
   font-size: 36px;
   line-height: 36px;
   color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    color: $basic-black;
+    margin: 0 50px 41px 87px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .functional-food__slogan {
@@ -25,9 +42,29 @@
   line-height: 14px;
   color: $basic-white;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    color: $basic-black;
+    margin: 0 0 41px 87px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .functional-food__link {
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 87px;
+    padding: 14px 26px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .functional-food__logo {
+    display: none;
+  }
 }

@@ -1,4 +1,16 @@
 .page-header__logo {
   display: inline-block;
   padding: 12px 23px 16px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 42px 30px;
+  }
 }
