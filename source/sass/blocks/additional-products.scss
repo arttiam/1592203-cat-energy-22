@@ -1,11 +1,30 @@
-.additional-products-list {
+.additional-products {
+  margin: 0 20px;
+}
+
+.additional-products__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 24px;
+  color: $basic-black;
+}
+
+.additional-products__caption {
+  line-height: 16px;
+  color: $special-light-black;
+  text-transform: uppercase;
+}
+
+.additional-products__list {
   list-style: none;
   padding: 0;
   margin-bottom: 40px;
 }
 
 .additional-products__item {
-  border-bottom: 1px solid $special-light-grey;
+  border-bottom: 1px solid $special-light-grey3;
 }
 
 .additional-products__link {
@@ -15,6 +34,7 @@
 .additional-products__text {
   display: flex;
   justify-content: space-between;
+  line-height: 14px;
 }
 
 .additional-products__stocks {
@@ -35,4 +55,6 @@
   color: $basic-white;
   width: 161px;
   text-align: center;
+  font-size: 16px;
+  line-height: 20px;
 }
