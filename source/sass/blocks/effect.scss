@@ -25,6 +25,11 @@
   line-height: 37px;
   color: $basic-black;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .effect__item-link {
@@ -35,4 +40,15 @@
   line-height: 16px;
   color: $basic-black;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 29px;
+  }
+}
+
+.effect__item-text {
+  @media (min-width: $tablet-width) {
+    color: $basic-black;
+  }
 }

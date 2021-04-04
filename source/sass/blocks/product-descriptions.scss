@@ -5,12 +5,37 @@
 .product-descriptions__list {
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 79px;
+  }
 }
 
 .product-descriptions__item {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 247px;
+    margin-bottom: 37px;
+  }
 }
 
 .product-descriptions__item--quickness {
   margin-bottom: 0;
+}
+
+.product-descriptions__title {
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.product-descriptions__text {
+  @media (min-width: $tablet-width) {
+    width: 245px;
+  }
 }

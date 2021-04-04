@@ -4,39 +4,41 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scalre=1">
   </head>
   <body class="page__body">
 
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="img/logo/logo-mobile-cat.svg" width="191" height="37" alt="логотип мобильный">
-      </a>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="img/logo/logo-mobile-cat.svg" width="191" height="37" alt="логотип мобильный">
+        </a>
 
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--active">
-            <a class="main-nav__link">
-              Главная
-            </a>
-          </li>
-          <li class="main-nav__item" class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">
-              Подбор программы
-            </a>
-          </li>
-        </ul>
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      </nav>
-
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__link">
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item" class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        </nav>
+      </div>
       <div class="functional-food">
         <h1 class="functional-food__title">Функциональное питание для котов</h1>
         <p class="functional-food__slogan">Занялся собой? Займись котом!</p>
-        <img src="img/logo/logo-product.png" alt="Логотип продукта" width="280" height="270">
+        <img class="functional-food__logo" src="img/logo/logo-product.png" alt="Логотип продукта" width="280" height="270">
         <a href="form.html" class="button functional-food__link">Подобрать программу</a>
       </div>
     </header>
@@ -47,7 +49,7 @@
         <h2 class="visually-hidden">Эфект от продукта</h2>
         <ul class="effect__list">
           <li class="effect__item effect__item--weight-loss">
-            <h3 class="effect__item-title">похудение</h3>
+            <h3 class="effect__item-title">Похудение</h3>
             <p class="effect__item-text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a href="catalog.html" class="effect__item-link">каталог slim</a>
           </li>
@@ -63,16 +65,16 @@
         <h2 class="product-descriptions__title heading-secondary">Как это работает</h2>
         <ul class="product-descriptions__list">
           <li class="product-descriptions__item product-descriptions__item--utility">
-            Функциональное питание содержит только полезные питательные вещества.
+            <p class="product-descriptions__text">Функциональное питание содержит только полезные питательные вещества.</p>
           </li>
           <li class="product-descriptions__item product-descriptions__item--convenience">
-            Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+            <p class="product-descriptions__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
           </li>
           <li class="product-descriptions__item product-descriptions__item--economy">
-            Замените один-два приема обычной еды на наше функциональное питание.
+            <p class="product-descriptions__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
           <li class="product-descriptions__item product-descriptions__item--quickness">
-            Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+            <p class="product-descriptions__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
           </li>
         </ul>
       </section>
