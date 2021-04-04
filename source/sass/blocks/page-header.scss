@@ -7,10 +7,26 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .page-header__wrapper {
+.page-header__wrapper {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    margin: 42px 30px;
+    margin: 42px auto;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+    margin: 69px auto 32px auto;
+  }
+}
+
+.page-header {
+  @media (min-width: $desktop-width) {
+    background:
+      url("../img/background/fon-cat-desktop.svg") no-repeat right top,
+      url("../img/background/header-cat-desktop.jpg") no-repeat right top;
+    background-size: 50%;
+    min-height: 694px;
   }
 }
