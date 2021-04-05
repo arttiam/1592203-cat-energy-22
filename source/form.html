@@ -57,8 +57,8 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__fieldset form__fieldset--separator">
-          <ul class="fields-list">
+        <fieldset class="form__fieldset form__fieldset--separator form__fieldset--border">
+          <ul class="fields-list fields-list--radio">
             <li class="radio">
               <input class="radio__input visually-hidden" type="radio" id="weight-loss" name="weight-loss" checked>
               <label class="radio__label" for="weight-loss">Похудение</label>
@@ -67,7 +67,7 @@
               <input class="radio__input visually-hidden" type="radio" id="weight-gain" name="weight-gain">
               <label class="radio__label" for="weight-gain">Набор веса</label>
             </li>
-            <li class="radio">
+            <li class="radio radio--end">
               <input class="radio__input visually-hidden" type="radio" id="not-certainty" name="not-certainty">
               <label class="radio__label" for="not-certainty">Не знаю (Нужен ваш совет)</label>
             </li>
@@ -93,7 +93,7 @@
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--caption">
           <legend class="form__legend">Дополнительно</legend>
-          <ul class="fields-list">
+          <ul class="fields-list fields-list--checkbox">
             <li class="checkbox">
               <input class="checkbox__input visually-hidden" type="checkbox" id="sweetener" name="sweetener-checkbox" checked>
               <label class="checkbox__label" for="sweetener">Сахарозаменитель</label>
@@ -112,8 +112,10 @@
             </li>
           </ul>
         </fieldset>
-        <button class="button form__button" type="submit">Отправить заявку</button>
-        <p class="form__legend-text">* — Обязательные поля</p>
+        <div class="form__button-wrapper">
+          <button class="button form__button" type="submit">Отправить заявку</button>
+          <p class="form__legend-text">* — Обязательные поля</p>
+        </div>
       </form>
       <section class="our-address our-address--font">
         <h2 class="visually-hidden">Как нас найти</h2>

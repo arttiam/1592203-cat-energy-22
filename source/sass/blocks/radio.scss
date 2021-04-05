@@ -8,6 +8,11 @@
   color: $special-light-black;
   text-transform: uppercase;
   margin-left: 45px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 29px;
+  }
 }
 
 .radio__label::before {
@@ -23,4 +28,10 @@
 
 .radio {
   margin-bottom: 20px;
+}
+
+.radio--end {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
