@@ -1,17 +1,5 @@
 .effect {
-  margin: 0 20px 27px 20px;
-
-  @media (min-width: $tablet-width) {
-    min-width: 768px;
-    margin: 0 auto;
-    padding: 0 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1440px;
-    margin: 0 auto;
-    padding: 0 110px;
-  }
+  margin-top: 27px;
 }
 
 .effect__list {

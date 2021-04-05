@@ -1,14 +1,12 @@
 .product-descriptions {
-  margin: 0 20px 42px 20px;
+  margin-top: 42px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 109px 0 30px;
+    padding-right: 109px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 auto;
-    padding: 0 110px 0 106px;
-    max-width: 1440px;
+    padding-right: 106px;
   }
 }
 
@@ -24,7 +22,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: space-between;
+    justify-content: flex-start;
     margin: 0;
   }
 }
@@ -33,12 +31,11 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    width: 247px;
     margin-bottom: 36px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 230px;
+    margin-right: 77px;
   }
 }
 

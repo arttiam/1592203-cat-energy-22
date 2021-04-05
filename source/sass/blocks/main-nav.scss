@@ -10,18 +10,19 @@
 }
 
 .main-nav__item {
-  display: block;
+  border-bottom: 1px solid $special-light-grey;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     margin-left: 38px;
+    border: none;
   }
 }
 
 .main-nav__link {
   display: inline-block;
-  padding: 22px 70px 24px 69px;
+  padding: 22px 24px;
   min-width: 320px;
-  border-bottom: 1px solid $special-light-grey;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 500;
   font-style: normal;

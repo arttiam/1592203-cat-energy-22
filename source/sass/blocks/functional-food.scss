@@ -1,9 +1,5 @@
 .functional-food {
-  background:
-    url("../img/background/fon-cat.svg") no-repeat top center,
-    $basic-green;
   text-align: center;
-  padding-top: 27px;
   height: 302px;
   margin-bottom: 140px;
 
@@ -11,8 +7,6 @@
     background: url("../img/logo/logo-product-desktop.png") no-repeat;
     background-position: 120px 200px;
     text-align: left;
-    padding: 0 30px;
-    margin: 0 auto;
     min-height: 700px;
   }
 
@@ -85,12 +79,6 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 80px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-header__wrapper-food {
-    min-height: 556px;
   }
 }
 

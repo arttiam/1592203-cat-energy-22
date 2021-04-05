@@ -1,6 +1,6 @@
 .page-header__logo {
   display: inline-block;
-  padding: 12px 23px 16px 20px;
+  padding: 12px 0 16px 0;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -8,15 +8,17 @@
 }
 
 .page-header__wrapper {
+  padding: 0;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    margin: 42px auto;
+    margin: 42px auto 42px auto;
     padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1220px;
+    padding: 0 110px;
     margin: 69px auto 32px auto;
   }
 }
@@ -28,5 +30,32 @@
       url("../img/background/header-cat-desktop.jpg") no-repeat right top;
     background-size: 50%;
     min-height: 694px;
+  }
+}
+
+
+.page-header__wrapper-food {
+  background:
+    url("../img/background/fon-cat.svg"),
+    url("../img/background/foot-header-cat.jpg") no-repeat top center;
+
+  @media (min-width: $tablet-width) {
+    background: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 556px;
+  }
+}
+
+.page-header__logo-wrapper {
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin: 0;
   }
 }

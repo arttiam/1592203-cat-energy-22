@@ -9,15 +9,16 @@
   <body class="page__body">
 
     <header class="page-header page-header--desktop">
-      <div class="page-header__wrapper">
-        <a class="page-header__logo">
-          <img class="page-header__logo-image" src="img/logo/logo-mobile-cat.svg" width="191" height="37" alt="логотип мобильный">
-        </a>
-
+      <div class="page-header__wrapper container">
+        <div class="page-header__logo-wrapper container">
+          <a class="page-header__logo">
+            <img class="page-header__logo-image" src="img/logo/logo-mobile-cat.svg" width="191" height="37" alt="логотип мобильный">
+          </a>
+        </div>
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
-              <a class="main-nav__link main-nav__link--desktop">
+              <a class="main-nav__link main-nav__link--desktop ">
                 Главная
               </a>
             </li>
@@ -36,7 +37,7 @@
         </nav>
       </div>
       <div class="page-header__wrapper-food">
-        <div class="functional-food">
+        <div class="functional-food container">
           <h1 class="functional-food__title">Функциональное питание для котов</h1>
           <p class="functional-food__slogan">Занялся собой? Займись котом!</p>
           <img class="functional-food__logo" src="img/logo/logo-product.png" alt="Логотип продукта" width="280" height="270">
@@ -47,7 +48,7 @@
 
     <main class="page-main">
 
-      <section class="effect">
+      <section class="effect container">
         <h2 class="visually-hidden">Эфект от продукта</h2>
         <ul class="effect__list">
           <li class="effect__item effect__item--weight-loss">
@@ -63,7 +64,7 @@
         </ul>
       </section>
 
-      <section class="product-descriptions">
+      <section class="product-descriptions container">
         <h2 class="product-descriptions__title heading-secondary">Как это работает</h2>
         <ul class="product-descriptions__list">
           <li class="product-descriptions__item product-descriptions__item--utility">
@@ -82,51 +83,63 @@
       </section>
 
       <section class="example">
-        <div class="example__wrapper">
-          <h2 class="example__title heading-secondary">Живой пример</h2>
-          <div class="example__parameters-wrapper">
-            <p class="example__text">
-              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-            </p>
-            <ul class="example__list">
-              <li class="example__item">
-                <p class="example__item-text">
-                  5 кг
+        <div class="example__title container">
+          <h2 class="heading-secondary">Живой пример</h2>
+        </div>
+
+        <div class="example__wrapper-container">
+
+
+            <div class="example__wrapper container">
+
+              <div class="example__parameters-wrapper container">
+                <p class="example__text">
+                  Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
                 </p>
-                <p class="example__desc">
-                  снижение веса
-                </p>
-              </li>
-              <li class="example__item">
-                <p class="example__item-text">
-                  60 дней
-                </p>
-                <p class="example__desc">
-                  затрачено времени
-                </p>
-              </li>
-            </ul>
-            <div class="example__result"><span>Затраты на питание: </span> <span>15 000 РУБ.</span></div>
-          </div>
-          <div class="example__choice-wrapper">
-            <label class="visually-hidden" for="selectingResult">Выбор результата</label>
-            <span class="example__restriction">было</span>
-            <input class="example__selecting-result" type="range" name="selectingResult">
-            <span class="example__restriction">стало</span>
-          </div>
+                <ul class="example__list">
+                  <li class="example__item">
+                    <p class="example__item-text">
+                      5 кг
+                    </p>
+                    <p class="example__desc">
+                      снижение веса
+                    </p>
+                  </li>
+                  <li class="example__item">
+                    <p class="example__item-text">
+                      60 дней
+                    </p>
+                    <p class="example__desc">
+                      затрачено времени
+                    </p>
+                  </li>
+                </ul>
+                <div class="example__result"><span>Затраты на питание: </span> <span>15 000 РУБ.</span></div>
+              </div>
+
+              <div class="example__choice-wrapper">
+                <label class="visually-hidden" for="selectingResult">Выбор результата</label>
+                <span class="example__restriction">было</span>
+                <input class="example__selecting-result" type="range" name="selectingResult">
+                <span class="example__restriction">стало</span>
+              </div>
+
+            </div>
+
+
         </div>
       </section>
 
       <section class="our-address">
         <h2 class="visually-hidden">Как нас найти</h2>
         <div class="our-address__wrapper">
-          <div class="our-address__address-wrapper">
+          <div class="our-address__address-wrapper container">
             <div class="our-address__address">
               <p class="our-address__invitation">приглашаем к сотрудничеству дилеров!</p>
               <address class="our-address__contact">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
             </div>
           </div>
-          <div class="our-address__map">
+          <div class="our-address__map container">
             <img class="our-address__image" src="img/different/location.png" width="320" height="362" alt="Как нас найти">
           </div>
         </div>
@@ -134,7 +147,7 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
+      <div class="page-footer__wrapper container">
         <div class="page-footer__logo">
           <a class="page-footer__link"><img src="img/logo/logo-2.svg" width="128" height="24" alt="Логотип"></a>
         </div>
