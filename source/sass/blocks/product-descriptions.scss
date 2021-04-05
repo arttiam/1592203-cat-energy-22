@@ -1,13 +1,5 @@
 .product-descriptions {
   margin-top: 40px;
-
-  @media (min-width: $tablet-width) {
-    padding-right: 109px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-right: 106px;
-  }
 }
 
 .product-descriptions__list {
@@ -31,11 +23,18 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 36px;
+    width: 324px;
+    margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 77px;
+    width: 245px;
+  }
+}
+
+.product-descriptions__item:not(:last-child) {
+  @media (min-width: $desktop-width) {
+    margin-right: 80px;
   }
 }
 
