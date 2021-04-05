@@ -1,11 +1,20 @@
 .page-footer {
   background-color: $basic-grey;
+}
+
+.page-footer__wrapper {
   padding: 39px 20px 22px 20px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     padding: 0 30px;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    padding: 0 110px;
+    margin: 0 auto;
   }
 }
 
