@@ -1,11 +1,11 @@
-.form {
-  margin: 0 20px;
-}
-
 .form__fieldset {
   border: none;
   padding: 0;
   margin: 0 0 22px 0;
+}
+
+.form__fieldset--caption {
+  border-top: 2px solid $special-green;
 }
 
 .form__label {
@@ -49,6 +49,8 @@
   font-size: 24px;
   line-height: 26px;
   color: $basic-black;
+  padding: 0 20px;
+  margin-right: 20px;
   margin-bottom: 35px;
 }
 
@@ -60,9 +62,10 @@
   line-height: 18px;
   color: $special-dark-grey;
   text-transform: uppercase;
-  width: 100%;
+  width: calc(100% - 40px);
   height: 150px;
   padding: 9px 12px 9px 14px;
+  margin: 0 20px;
   border: 1px solid $light-grey;
   resize: none;
 }

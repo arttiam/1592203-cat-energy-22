@@ -41,9 +41,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    color: $basic-white;
     font-size: 20px;
     line-height: 29px;
+  }
+}
+
+.main-nav__link--desktop {
+  @media (min-width: $desktop-width) {
+    color: $basic-white;
   }
 }
 

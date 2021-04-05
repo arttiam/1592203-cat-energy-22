@@ -9,36 +9,37 @@
   <body class="page__body">
 
     <header class="page-header">
+      <div class="page-header__wrapper">
+        <a href="index.html" class="page-header__logo">
+          <img src="img/logo/logo-mobile-cat.svg" width="191" height="37" alt="логотип мобильный">
+        </a>
 
-      <a href="index.html" class="page-header__logo">
-        <img src="img/logo/logo-mobile-cat.svg" width="191" height="37" alt="логотип мобильный">
-      </a>
-
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="main-nav__item main-nav__item--active">
-            <a class="main-nav__link">
-              Подбор программы
-            </a>
-          </li>
-        </ul>
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      </nav>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__link">
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main">
       <h1 class="page-main__title">Подбор программы</h1>
-      <p class="page-main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <p class="page-main__text">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
       <form class="form" method="post" action="https://echo.htmlacademy.ru">
         <fieldset class="form__fieldset form__fieldset--separator">
           <ul class="fields-list">
@@ -72,8 +73,8 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__fieldset">
-          <legend class="form__legend">Контактные данные (владельца кота)</legend>
+        <fieldset class="form__fieldset form__fieldset--caption">
+          <legend class="form__legend">Контактные данные<br>(владельца кота)</legend>
           <ul class="fields-list">
             <li class="fields-list__item">
               <label class="form__label" for="email">E-mail:*</label>
@@ -85,12 +86,12 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--caption">
           <legend class="form__legend">Комментарий</legend>
           <label class="visually-hidden" for="comment">Текст комментария</label>
           <textarea class="form__textarea" id="comment" name="comment-field" placeholder="Расскажите обо всех повАдках кота"></textarea>
         </fieldset>
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--caption">
           <legend class="form__legend">Дополнительно</legend>
           <ul class="fields-list">
             <li class="checkbox">

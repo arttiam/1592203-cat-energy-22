@@ -21,7 +21,7 @@
   }
 }
 
-.page-header {
+.page-header--desktop {
   @media (min-width: $desktop-width) {
     background:
       url("../img/background/fon-cat-desktop.svg") no-repeat right top,
