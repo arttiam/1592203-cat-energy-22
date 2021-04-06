@@ -143,3 +143,15 @@
     background: $basic-grey;
   }
 }
+
+.example__title h2 {
+  margin: 0 0 33px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 63px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 76px 0;
+  }
+}

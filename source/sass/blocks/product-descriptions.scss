@@ -1,5 +1,25 @@
+@mixin col-1-4 ($gap) {
+  width: calc(100% / 4 - #{$gap} * 3 / 4);
+}
+
+@mixin col-2-2 ($gap) {
+  width: calc(100% / 2 - #{$gap} / 2);
+}
+
 .product-descriptions {
   margin-top: 40px;
+}
+
+.product-descriptions__title {
+  margin: 0 0 38px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 32px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 71px 0;
+  }
 }
 
 .product-descriptions__list {
@@ -14,7 +34,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: flex-start;
+    justify-content: space-between;
     margin: 0;
   }
 }
@@ -23,18 +43,12 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    width: 324px;
-    margin-bottom: 60px;
+    @include col-2-2(60px);
+    margin-bottom: 37px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 245px;
-  }
-}
-
-.product-descriptions__item:not(:last-child) {
-  @media (min-width: $desktop-width) {
-    margin-right: 80px;
+    @include col-1-4(80px);
   }
 }
 
