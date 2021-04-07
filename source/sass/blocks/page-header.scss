@@ -1,5 +1,5 @@
 .page-header {
-  margin-bottom: 170px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     padding-top: 24px;
@@ -48,7 +48,7 @@
 
 .page-header__wrapper-food {
   background:
-    url("../img/background/fon-cat.svg"),
+    url("../img/background/fon-cat.svg") repeat-x,
     url("../img/background/foot-header-cat.jpg") no-repeat top center;
 
   @media (min-width: $tablet-width) {
