@@ -58,18 +58,27 @@
 }
 
 .our-address__wrapper {
-  @media (min-width: $tablet-width) {
-    background: url("../img/background/background-tablet.png") no-repeat bottom;
-    min-height: 601px;
-  }
-
-  @media (min-width: $desktop-width) {
-    background: url("../img/background/background-desktop.png") no-repeat bottom;
-    min-height: 400px;
-    padding: 95px 0;
-  }
+  min-height: min-content;
 }
 
 .our-address__map {
+  background: url("../img/background/location-mobile.png");
+  min-height: min-content;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    background: url("../img/background/background-tablet.png") no-repeat;
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: url("../img/background/background-desktop.png") no-repeat;
+    height: 400px;
+  }
+}
+
+.our-address__map iframe {
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
