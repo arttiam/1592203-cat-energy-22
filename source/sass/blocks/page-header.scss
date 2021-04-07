@@ -23,11 +23,15 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    max-width: $tablet-width;
     margin: 0 auto 42px auto;
+    padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 auto 32px auto;
+    max-width: $desktop-width;
+    margin-bottom: 32px;
+    padding: 0 30px;
   }
 }
 

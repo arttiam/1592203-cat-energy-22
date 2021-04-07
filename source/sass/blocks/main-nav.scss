@@ -10,7 +10,7 @@
 }
 
 .main-nav__item {
-  outline: 1px solid $special-light-grey;
+  border-top: 1px solid $special-light-grey;
   text-align: center;
 
   @media (min-width: $tablet-width) {
