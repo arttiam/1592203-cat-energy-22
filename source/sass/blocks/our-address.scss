@@ -1,8 +1,24 @@
+.our-address__address-wrapper {
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    min-height: 201px;
+    margin: 0 auto;
+    padding: 0 110px;
+  }
+}
+
 .our-address__address {
   display: flex;
   justify-content: space-between;
-  padding: 28px 20px;
+  padding: 28px 0;
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    min-height: 201px;
+    background-color: $basic-white;
+  }
 }
+
 
 .our-address__invitation {
   font-family: "Oswald", "Arial", sans-serif;
@@ -12,14 +28,57 @@
   line-height: 18px;
   color: $special-black;
   text-transform: uppercase;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
 .our-address__contact {
   font-style: normal;
   font-size: 14px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.our-address__image {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.our-address__wrapper {
+  min-height: min-content;
 }
 
 .our-address__map {
-  width: 100%;
+  background: url("../img/background/location-mobile.png");
+  min-height: min-content;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    background: url("../img/background/background-tablet.png") no-repeat;
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: url("../img/background/background-desktop.png") no-repeat;
+    height: 400px;
+  }
+}
+
+.our-address__map iframe {
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }

@@ -1,16 +1,73 @@
+.page-header {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 53px;
+  }
+}
+
 .page-header__logo {
   display: inline-block;
-  padding: 12px 23px 16px 20px;
+  padding: 12px 0 12px 0;
 
   @media (min-width: $tablet-width) {
     padding: 0;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .page-header__wrapper {
+.page-header__wrapper {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    margin: 42px 30px;
+    max-width: $tablet-width;
+    margin: 0 auto 42px auto;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: $desktop-width;
+    margin-bottom: 32px;
+    padding: 0 30px;
+  }
+}
+
+.page-header--desktop {
+  @media (min-width: $desktop-width) {
+    background:
+      url("../img/background/fon-cat-desktop.svg") no-repeat right top,
+      url("../img/background/header-cat-desktop.jpg") no-repeat right top;
+    background-size: 50%;
+    min-height: 694px;
+  }
+}
+
+
+.page-header__wrapper-food {
+  background:
+    url("../img/background/fon-cat.svg") repeat-x,
+    url("../img/background/foot-header-cat.jpg") no-repeat top center;
+
+  @media (min-width: $tablet-width) {
+    background: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 556px;
+  }
+}
+
+.page-header__logo-wrapper {
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin: 0;
   }
 }

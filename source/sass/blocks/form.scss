@@ -1,11 +1,11 @@
-.form {
-  margin: 0 20px;
-}
-
 .form__fieldset {
   border: none;
   padding: 0;
   margin: 0 0 22px 0;
+}
+
+.form__fieldset--caption {
+  border-top: 2px solid $special-green;
 }
 
 .form__label {
@@ -40,6 +40,18 @@
 
 .form__fieldset--separator {
   border-bottom: 1px solid $dark-grey;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.form__fieldset--border {
+  @media (min-width: $tablet-width) {
+    border: 1px solid $light-grey;
+    margin: 0 70px 71px 70px;
+    padding: 25px 30px;
+  }
 }
 
 .form__legend {
@@ -49,7 +61,19 @@
   font-size: 24px;
   line-height: 26px;
   color: $basic-black;
+  padding: 0 20px;
+  margin-right: 20px;
   margin-bottom: 35px;
+}
+
+.form__button-wrapper {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 136px 0 70px;
+  }
 }
 
 .form__textarea {
@@ -60,11 +84,17 @@
   line-height: 18px;
   color: $special-dark-grey;
   text-transform: uppercase;
-  width: 100%;
+  width: calc(100% - 40px);
   height: 150px;
   padding: 9px 12px 9px 14px;
+  margin: 0 20px;
   border: 1px solid $light-grey;
   resize: none;
+
+  @media (min-width: $tablet-width) {
+    width: calc(100% - 140px);
+    margin: 0 70px;
+  }
 }
 
 .form__textarea::placeholder {
@@ -74,7 +104,10 @@
 
 .form__legend-text {
   margin: 21px 0 0 0;
-  text-align: center;
   line-height: 16px;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    min-width: 221px;
+  }
 }

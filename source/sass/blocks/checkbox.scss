@@ -8,6 +8,11 @@
   color: $basic-black;
   text-transform: uppercase;
   margin-left: 45px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 29px;
+  }
 }
 
 .checkbox__label::before {
@@ -18,8 +23,34 @@
   top: -3px;
   left: -40px;
   border: 1px solid $special-light-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    top: -5px;
+    left: -50px;
+  }
 }
 
 .checkbox {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 221px;
+  }
+}
+
+.checkbox:nth-child(2n+1) {
+  @media (min-width: $tablet-width) {
+    margin-right: 60px;
+  }
+}
+
+.fields-list--checkbox {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 133px 0 70px;
+  }
 }

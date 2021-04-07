@@ -3,6 +3,11 @@
   border-top: 1px solid $dark-grey;
   border-bottom: 1px solid $dark-grey;
   margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: 0;
+  }
 }
 
 .social__list {
