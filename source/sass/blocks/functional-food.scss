@@ -1,7 +1,7 @@
 .functional-food {
   text-align: center;
   height: 302px;
-  margin-bottom: 140px;
+  padding-top: 28px;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -30,6 +30,7 @@
   font-size: 36px;
   line-height: 36px;
   color: $basic-white;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     color: $basic-black;
@@ -45,7 +46,7 @@
 }
 
 .functional-food__slogan {
-  margin: 0 auto;
+  margin: 0 auto 28px auto;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -85,6 +86,7 @@
 }
 
 .functional-food__link {
+  padding: 11px 44px;
   font-size: 14px;
   line-height: 18px;
 
