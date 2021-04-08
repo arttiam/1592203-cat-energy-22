@@ -53,6 +53,10 @@ body {
 }
 
 .container--form {
+  max-width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     max-width: $tablet-width;
     padding: 0 70px;

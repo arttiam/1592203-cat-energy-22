@@ -41,11 +41,11 @@
     <main class="page-main">
       <h1 class="page-main__title container container--form">Подбор программы</h1>
       <p class="page-main__text container container--form">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
-      <form class="form" method="post" action="https://echo.htmlacademy.ru">
+      <form class="form container--form" method="post" action="https://echo.htmlacademy.ru">
 
-        <div class="form__wrapper container--form">
+        <div class="form__wrapper">
           <fieldset class="form__fieldset form__fieldset--separator">
-            <ul class="fields-list fields-list--reset container">
+            <ul class="fields-list fields-list--reset">
               <li class="fields-list__item">
                 <label class="form__label" for="name">Имя:*</label>
                 <input class="form__input" type="text" id="name" name="name-field" placeholder="барсик">
@@ -61,7 +61,7 @@
             </ul>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--separator form__fieldset--border">
-            <ul class="fields-list fields-list--reset container">
+            <ul class="fields-list fields-list--reset">
               <li class="radio">
                 <input class="radio__input visually-hidden" type="radio" id="weight-loss" name="weight-loss" checked>
                 <label class="radio__label" for="weight-loss">Похудение</label>
@@ -78,9 +78,9 @@
           </fieldset>
         </div>
 
-        <fieldset class="form__fieldset form__fieldset--caption">
-          <legend class="form__legend">Контактные данные<br>(владельца кота)</legend>
-          <ul class="fields-list fields-list--contacts container container--form">
+        <fieldset class="form__fieldset">
+          <legend class="form__legend form__legend--size form__legend--line-contacts">Контактные данные (владельца кота)</legend>
+          <ul class="fields-list fields-list--contacts">
             <li class="fields-list__item fields-list__item--contacts">
               <label class="form__label" for="email">E-mail:*</label>
               <input class="form__input form__input--email" type="text" id="email" name="email-field" placeholder="kuklachev@gmail.com">
@@ -92,17 +92,17 @@
           </ul>
         </fieldset>
 
-        <fieldset class="form__fieldset form__fieldset--caption">
-          <legend class="form__legend">Комментарий</legend>
+        <fieldset class="form__fieldset">
+          <legend class="form__legend form__legend--line-comment">Комментарий</legend>
           <label class="visually-hidden" for="comment">Текст комментария</label>
-          <div class="container container--form">
+          <div>
             <textarea class="form__textarea" id="comment" name="comment-field" placeholder="Расскажите обо всех повАдках кота"></textarea>
           </div>
         </fieldset>
 
-        <fieldset class="form__fieldset form__fieldset--caption">
-          <legend class="form__legend">Дополнительно</legend>
-          <ul class="fields-list fields-list--checkbox container container--form">
+        <fieldset class="form__fieldset">
+          <legend class="form__legend form__legend--line-checkbox">Дополнительно</legend>
+          <ul class="fields-list fields-list--checkbox">
             <li class="checkbox">
               <input class="checkbox__input visually-hidden" type="checkbox" id="sweetener" name="sweetener-checkbox" checked>
               <label class="checkbox__label" for="sweetener">Сахарозаменитель</label>
@@ -121,7 +121,7 @@
             </li>
           </ul>
         </fieldset>
-        <div class="form__button-wrapper container--form">
+        <div class="form__button-wrapper">
           <button class="button form__button" type="submit">Отправить заявку</button>
           <p class="form__legend-text">* — Обязательные поля</p>
         </div>
@@ -177,4 +177,4 @@
       </div>
     </footer>
   </body>
-  </html>
+</html>
