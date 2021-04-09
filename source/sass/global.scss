@@ -25,6 +25,7 @@ body {
   font-size: 36px;
   line-height: 40px;
   color: $basic-black;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -75,6 +76,7 @@ body {
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
+  margin: 0;
 }
 
 img {
