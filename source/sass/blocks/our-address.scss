@@ -1,24 +1,35 @@
+.our-address__desktop {
+  position: relative;
+}
+
 .our-address__address-wrapper {
   @media (min-width: $desktop-width) {
-    width: 1440px;
-    min-height: 201px;
-    margin: 0 auto;
-    padding: 0 110px;
+    position: absolute;
+    top: 90px;
+    min-width: 570px;
   }
+}
+
+.our-address--font {
+  background-color: $basic-grey;
 }
 
 .our-address__address {
   display: flex;
   justify-content: space-between;
-  padding: 28px 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 65px;
+    padding-bottom: 20px;
+    min-height: 201px;
+  }
 
   @media (min-width: $desktop-width) {
-    width: 570px;
     min-height: 201px;
+    justify-content: center;
     background-color: $basic-white;
   }
 }
-
 
 .our-address__invitation {
   font-family: "Oswald", "Arial", sans-serif;
@@ -32,7 +43,11 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 21px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 60px;
   }
 }
 
@@ -40,10 +55,23 @@
   font-style: normal;
   font-size: 14px;
   line-height: 20px;
+  text-align: end;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
+}
+
+.our-address__contact p {
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 19px;
   }
 }
 

@@ -35,22 +35,7 @@
 .checkbox {
   margin-bottom: 20px;
 
-  @media (min-width: $tablet-width) {
-    min-width: 221px;
-  }
-}
-
-.checkbox:nth-child(2n+1) {
-  @media (min-width: $tablet-width) {
-    margin-right: 60px;
-  }
-}
-
-.fields-list--checkbox {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 133px 0 70px;
+  @media (min-width: $desktop-width) {
+    @include col-1-4(80px);
   }
 }

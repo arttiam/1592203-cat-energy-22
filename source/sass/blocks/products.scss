@@ -1,13 +1,19 @@
 .products {
   list-style: none;
   padding: 0;
-}
 
-.products__item {
-  margin: 0 auto;
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
 }
 
 .products__item-wrapper {
   border-bottom: 1px solid $special-light-grey2;
   margin-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }

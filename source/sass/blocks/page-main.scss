@@ -1,3 +1,13 @@
+.page-main {
+  padding-top: 20px;
+  border-top: 1px solid $special-light-grey;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
 .page-main__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -5,21 +15,16 @@
   font-size: 36px;
   line-height: 36px;
   color: $basic_black;
-  margin: 0 0 37px 20px;
+  margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    max-width: 768px;
-    padding: 0 70px;
-    margin: 0 auto;
     margin-bottom: 54px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1440px;
-    padding: 0 110px;
-    margin: 0 auto 56px auto;
+    margin-bottom: 56px;
   }
 }
 
@@ -31,20 +36,15 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $basic_black;
-  margin: 0 20px 39px 20px;
+  margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    max-width: 768px;
-    padding: 0 70px;
-    margin: 0 auto;
     margin-bottom: 66px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1440px;
-    padding: 0 110px;
-    margin: 0 auto 66px auto;
+    margin-bottom: 66px;
   }
 }

@@ -25,11 +25,16 @@ body {
   font-size: 36px;
   line-height: 40px;
   color: $basic-black;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
   }
+}
+
+.reset-padding {
+  padding: 0;
 }
 
 .container {
@@ -48,12 +53,30 @@ body {
   }
 }
 
+.container--form {
+  max-width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: $tablet-width;
+    padding: 0 70px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: $desktop-width;
+    padding: 0 30px;
+  }
+}
+
 .subtitle {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
   line-height: 20px;
+  margin: 0;
 }
 
 img {
