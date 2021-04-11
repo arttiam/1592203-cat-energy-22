@@ -21,7 +21,7 @@
 
 .example__choice-wrapper {
   text-align: center;
-  padding-bottom: 29px;
+  padding-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 44px;
@@ -138,7 +138,7 @@
   color: $basic-black;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 297px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -190,14 +190,15 @@
 }
 
 .example__cat-fat {
+  position: absolute;
+  width: 270px;
+  left: -11px;
+  height: 240px;
+
   @media (min-width: $tablet-width) {
     width: 677px;
     height: 536px;
   }
-}
-
-.example__cat-image {
-  position: absolute;
 }
 
 .example__cat-skinny {
@@ -209,4 +210,10 @@
 
 .cat-hidden {
   display: none;
+}
+
+.example__cat-image {
+  position: relative;
+  min-height: 240px;
+  margin-bottom: 31px;
 }
