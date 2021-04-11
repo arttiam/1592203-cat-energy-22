@@ -1,5 +1,10 @@
+.effect {
+  margin-bottom: 27px;
+}
+
 .effect__list {
   list-style: none;
+  margin: 0;
   padding: 0;
 
   @media (min-width: $desktop-width) {
@@ -22,7 +27,7 @@
 
 .effect__item {
   background-color: $basic-grey;
-  padding: 21px 33px 18px 20px;
+  padding: 30px 33px 18px 20px;
   min-height: 266px;
 
   @media (min-width: $tablet-width) {
@@ -43,6 +48,7 @@
   line-height: 37px;
   color: $basic-black;
   text-transform: uppercase;
+  margin: 0 0 29px 71px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -58,6 +64,7 @@
   line-height: 16px;
   color: $basic-black;
   text-transform: uppercase;
+  background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -66,7 +73,41 @@
 }
 
 .effect__item-text {
+  margin: 0 0 19px 0;
+  padding-bottom: 22px;
+  border-bottom: 1px solid $dark-grey;
+
   @media (min-width: $tablet-width) {
     color: $basic-black;
   }
+}
+
+.effect__link-weight-loss {
+  margin: 0;
+  width: 134px;
+  background: url("../../img/decorative/arrow.svg") 93px 2px no-repeat;
+}
+
+.effect__link-weight-gain {
+  margin: 0;
+  width: 134px;
+  background: url("../../img/decorative/arrow.svg") 91px 2px no-repeat;
+}
+
+.effect__item--weight-loss {
+  background: url("../img/logo/logo-cat-slim.svg") 22px 21px no-repeat, $basic-grey;
+}
+
+.effect__item--weight-gain {
+  background: url("../img/logo/logo-cat-fat.svg") 13px 24px no-repeat, $basic-grey;
+}
+
+.effect__item-link--loss {
+  display: inline-block;
+  padding-right: 15px;
+}
+
+.effect__item-link--gain {
+  display: inline-block;
+  padding-right: 17px;
 }
