@@ -1,4 +1,5 @@
 .example {
+  padding-top: 27px;
   background: $basic-grey;
 
   @media (min-width: $tablet-width) {
@@ -38,7 +39,7 @@
 .example__list {
   list-style: none;
   padding: 0;
-  margin: 0 0 25px 0;
+  margin: 0 0 34px 0;
   display: flex;
   justify-content: space-between;
 
@@ -51,13 +52,13 @@
   text-align: center;
   border: 1px solid $special-light-grey3;
   border-radius: 3px;
-  padding-top: 14px;
+  padding-top: 13px;
   min-width: 124px;
-  height: 58px;
+  height: 56px;
 
   @media (min-width: $tablet-width) {
     padding: 15px 0 0 0;
-    min-width: 162px;
+    min-width: 163px;
     height: 72px;
     margin: 0 42px 0 0;
   }
@@ -97,7 +98,7 @@
   line-height: 24px;
   color: $basic-black;
   text-transform: uppercase;
-  margin: 0 0 12px 0;
+  margin: 0 0 10px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -137,6 +138,7 @@
   color: $basic-black;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 297px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -192,6 +194,10 @@
     width: 677px;
     height: 536px;
   }
+}
+
+.example__cat-image {
+  position: absolute;
 }
 
 .example__cat-skinny {

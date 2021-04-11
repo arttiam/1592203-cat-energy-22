@@ -7,8 +7,9 @@
 }
 
 .product-descriptions {
-  margin-top: 40px;
+  margin-bottom: 42px;
 }
+
 
 .product-descriptions__title {
   margin: 0 0 38px 0;
@@ -40,7 +41,9 @@
 }
 
 .product-descriptions__item {
+  padding-top: 3px;
   margin-bottom: 20px;
+  min-height: 60px;
 
   @media (min-width: $tablet-width) {
     @include col-2-2(60px);
@@ -52,11 +55,10 @@
   }
 }
 
-.product-descriptions__item--quickness {
-  margin-bottom: 0;
-}
-
 .product-descriptions__text {
+  margin: 0 0 26px 80px;
+  width: 200px;
+
   @media (min-width: $tablet-width) {
     width: 245px;
   }
@@ -64,4 +66,20 @@
   @media (min-width: $desktop-width) {
     width: 201px;
   }
+}
+
+.product-descriptions__item--utility {
+  background: url("../../img/decorative/utility.svg") no-repeat;
+}
+
+.product-descriptions__item--convenience {
+  background: url("../../img/decorative/convenience.svg") no-repeat;
+}
+
+.product-descriptions__item--economy {
+  background: url("../../img/decorative/economy.svg") no-repeat;
+}
+
+.product-descriptions__item--quickness {
+  background: url("../../img/decorative/quickness.svg") no-repeat;
 }
