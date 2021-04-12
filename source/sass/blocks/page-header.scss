@@ -35,6 +35,16 @@
   }
 }
 
+.page-header__logo[href] .page-header__logo-image {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .page-header--desktop {
   @media (min-width: $desktop-width) {
     background:

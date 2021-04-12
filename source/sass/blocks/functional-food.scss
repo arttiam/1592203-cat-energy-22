@@ -89,6 +89,14 @@
   font-size: 14px;
   line-height: 18px;
 
+  &:hover {
+    background-color: $basic-green2;
+  }
+
+  &:active {
+    color: $special-basic-white;
+  }
+
   @media (min-width: $tablet-width) {
     display: inline-block;
     position: relative;
