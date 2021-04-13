@@ -1,4 +1,6 @@
 .main-nav {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     padding-top: 19px;
   }
@@ -78,10 +80,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-nav__toggle {
-    display: none;
-  }
-
   .main-nav__item--active {
     padding-bottom: 4px;
     border-bottom: 2px solid $special-green;
@@ -89,7 +87,27 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-nav__item--active {
+  .page-header--desktop .main-nav__item--active {
     border-bottom: 2px solid $basic-white;
   }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: -65px;
+  right: 2px;
+  width: 61px;
+  height: 61px;
+  border: none;
+  background: url("../../img/decorative/mobile/mobile-toggle.svg") no-repeat;
+  background-position: 50% 50%;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__toggle--closed {
+  background: url("../../img/decorative/mobile/mobile-toggle-closed.svg") no-repeat;
+  background-position: 50% 50%;
 }
