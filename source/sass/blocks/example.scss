@@ -2,11 +2,13 @@
   background: $basic-grey;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(180deg, transparent 55.5%, $basic-grey2 44.5%);
+    padding-bottom: 29px;
+    background: linear-gradient(180deg, transparent 57.1%, $basic-grey2 44.5%);
   }
 
   @media (min-width: $desktop-width) {
-    background: linear-gradient(0deg, transparent 73.2%, $basic-white 30%),
+    padding-bottom: 0;
+    background: linear-gradient(0deg, transparent 70.3%, $basic-white 30%),
       linear-gradient(270deg, $basic-grey2 50%, $basic-grey 50%);
   }
 }
@@ -24,7 +26,6 @@
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 68px;
     background: linear-gradient(0deg, $basic-grey2 70%, transparent 30%);
     padding-bottom: 35px;
   }
@@ -32,7 +33,7 @@
   @media (min-width: $desktop-width) {
     grid-row: 1/3;
     grid-column: 2/3;
-    background: linear-gradient(0deg, transparent 73.1%, $basic-white 26.9%),
+    background: linear-gradient(0deg, transparent 70.3%, $basic-white 29.7%),
       linear-gradient(90deg, $basic-grey 53.5%, $basic-grey2 48%);
 
     padding-bottom: 0;
@@ -193,6 +194,8 @@
     font-size: 20px;
     line-height: 29px;
     border-bottom: 1px dotted $basic-special-black;
+    margin-top: 6px;
+    height: 30px;
 
     &:hover {
       border-bottom: 1px solid $basic-special-black1;
@@ -201,6 +204,11 @@
     &:active {
       border: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 29px;
+    margin-top: 6px;
   }
 }
 
@@ -239,7 +247,7 @@
   margin-left: 44px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 68px;
+    margin-left: 38px;
   }
 
   @media (min-width: $desktop-width) {
@@ -259,9 +267,15 @@
 .example__cat-image {
   position: relative;
   height: 250px;
+  margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     height: 520px;
+    margin-bottom: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 33px;
   }
 }
 
@@ -323,7 +337,20 @@
     outline: 1px solid red;
     width: 100vw;
     height: calc(100% + 300px);
-    background: linear-gradient(to bottom, $basic-white, $basic-white 200px, $basic-grey2 201px);
+    background: linear-gradient(to bottom, $basic-white, $basic-white 211px, $basic-grey2 211px);
+  }
+
+  @media (min-width: $desktop-width) {
+    .after::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -40px;
+      outline: 1px solid red;
+      width: 100vw;
+      height: calc(100% + 300px);
+      background: linear-gradient(to bottom, $basic-white, $basic-white 235px, $basic-grey2 235px);
+    }
   }
 }
 
@@ -350,14 +377,23 @@
   position: relative;
   display: block;
   width: 84px;
-  margin: 0 auto;
-
-  -webkit-appearance: none; /* Скрывает слайдер, чтобы можно было создать свой */
+  margin: 2px 17px 0 18px;
+  appearance: none; /* Скрывает слайдер, чтобы можно было создать свой */
   background: transparent;
+
+  @media (min-width: $tablet-width) {
+    width: 428px;
+    height: 40px;
+    margin-top: 0;
+    margin-left: 26px;
+    margin-right: 19px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 428px;
     height: 40px;
+    margin-left: 26px;
+    margin-right: 19px;
   }
 }
 
@@ -365,24 +401,98 @@
   outline: none;
 }
 
-input[type=range]::-webkit-slider-thumb {
+input[type="range"]::-webkit-slider-thumb {
   appearance: none;
   border: none;
-  height: 34px;
-  width: 34px;
-  border-radius: 50%;
+  height: 6px;
+  width: 35px;
+  border-radius: 6px;
   background: $basic-green;
-  border: 13px solid $basic-white;
   cursor: pointer;
-  margin-top: -14px; /* Вам нужно указать значение для поля в Chrome, но в Firefox и IE это происходит автоматически */
-  
+  margin: 3px 0 0 0;
+
+  @media (min-width: $tablet-width) {
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    background: $basic-green;
+    border: 13px solid $basic-white;
+    cursor: pointer;
+    box-shadow: 0 0 0 1px $special-light-grey3, 0 1px 3px $special-light-grey3;
+    margin-top: -14px; /* Вам нужно указать значение для поля в Chrome, но в Firefox и IE это происходит автоматически */
+
+    &:hover {
+      box-shadow: 0 0 0 1px $special-light-grey3, 0 2px 4px $special-light-grey3;
+    }
+
+    &:active {
+      box-shadow: 0 0 0 1px $basic-green, 0 1px 3px $special-light-grey3;
+    }
+  }
 }
 
-input[type=range]::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 6px;
-  cursor: pointer;
-  background: $special-light-grey3;
-  border-radius: 3px;
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 84px;
+  height: 14px;
+  background: $basic-white;
+  border: 1px solid $special-light-grey3;
+  padding: 0 4px 0 5px;
+  border-radius: 6px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    background: $special-light-grey3;
+    border-radius: 3px;
+    border: none;
+  }
+}
+
+input[type="range"]::-moz-range-thumb {
+  appearance: none;
   border: none;
+  height: 6px;
+  width: 35px;
+  border-radius: 6px;
+  background: $basic-green;
+  cursor: pointer;
+  margin: 3px 0 0 0;
+
+  @media (min-width: $tablet-width) {
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    background: $basic-green;
+    border: 14px solid $basic-white;
+    cursor: pointer;
+    box-shadow: 0 0 0 1px $special-light-grey3, 0 1px 3px $special-light-grey3;
+    margin-top: -14px; /* Вам нужно указать значение для поля в Chrome, но в Firefox и IE это происходит автоматически */
+
+    &:hover {
+      box-shadow: 0 0 0 1px $special-light-grey3, 0 2px 4px $special-light-grey3;
+    }
+
+    &:active {
+      box-shadow: 0 0 0 1px $basic-green, 0 1px 3px $special-light-grey3;
+    }
+  }
+}
+
+input[type="range"]::-moz-range-track {
+  width: 84px;
+  height: 14px;
+  background: $basic-white;
+  border: 1px solid $special-light-grey3;
+  padding: 0 4px 0 5px;
+  border-radius: 6px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    background: $special-light-grey3;
+    border-radius: 3px;
+    border: none;
+  }
 }

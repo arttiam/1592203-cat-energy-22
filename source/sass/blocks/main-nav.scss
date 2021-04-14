@@ -87,7 +87,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-header--desktop .main-nav__item--active {
+  .main-nav__list--desktop .main-nav__item--active {
     border-bottom: 2px solid $basic-white;
   }
 }

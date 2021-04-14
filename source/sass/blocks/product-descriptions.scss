@@ -55,8 +55,9 @@
   min-height: 60px;
 
   @media (min-width: $tablet-width) {
-    position: relative;
     @include col-2-2(60px);
+
+    position: relative;
     padding: 153px 0 55px 0;
     margin-bottom: 37px;
 
