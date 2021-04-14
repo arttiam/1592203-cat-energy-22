@@ -8,7 +8,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 53px;
-    margin-bottom: 80px;
+    margin-bottom: 82px;
   }
 }
 
@@ -49,11 +49,25 @@
 
 .page-header--desktop {
   @media (min-width: $desktop-width) {
-    background:
+    position: relative;
+    /*background:
       url("../img/background/fon-cat-desktop.svg") no-repeat right top,
       url("../img/background/header-cat-desktop.jpg") no-repeat right top;
-    background-size: 50%;
+    background-size: 50%;*/
+    background: linear-gradient(90deg, transparent 55.5%, $basic-green 44.5%);
     min-height: 694px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      background: linear-gradient($basic-green 100%, transparent 0%),
+        url("../img/background/header-cat-desktop.jpg");
+      background-size: cover, cover;
+    }
   }
 }
 
@@ -61,14 +75,16 @@
 .page-header__wrapper-food {
   background:
     url("../img/background/fon-cat.svg") repeat-x,
-    url("../img/background/foot-header-cat.jpg") no-repeat top center;
+    url("../../img/background/foot-header-cat.jpg") no-repeat top center,
+    linear-gradient(180deg, $special-dark-grey 63%, transparent 37%);
+
 
   @media (min-width: $tablet-width) {
     background: none;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 556px;
+    min-height: 554px;
   }
 }
 

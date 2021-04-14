@@ -121,18 +121,32 @@
 
           <div class="example__choice-wrapper">
             <label class="visually-hidden" for="selectingResult">Выбор результата</label>
-            <div class="example__cat-image">
-              <img class="example__cat-skinny cat-hidden" src="img/different/cat-skinny.png" width="251" height="240" alt="Стриженый кот">
-              <img class="example__cat-fat" src="img/different/cat-fat.png" width="311" height="232">
-            </div>
-            <div class="example__selecting-result">
-              <span class="example__restriction">было</span>
-              <div class="example__scale">
-                <div class="example__rim" tabindex="0">
-                  <div class="example__toggle"></div>
+            <div class="example__choice">
+              <div class="example__cat-image">
+                <div class="example__cat before">
+                  <picture>
+                    <source srcset="img/different/cat-fat.png" media="(min-width: 768px)">
+                    <source srcset="img/different/mobile/before-mobile.png" media="(min-width: 320px)">
+                    <img src="img/different/cat-fat.png">
+                  </picture>
+                </div>
+                <div class="example__cat after">
+                  <div class="after-wrapper">
+                    <picture>
+                      <source srcset="img/different/cat-skinny.png" media="(min-width: 768px)">
+                      <source srcset="img/different/mobile/after-mobile.png" media="(min-width: 320px)">
+                      <img src="img/different/cat-skinny.png">
+                    </picture>
+                  </div>
                 </div>
               </div>
-              <span class="example__restriction">стало</span>
+              <div class="example__selecting-result">
+                <span class="example__restriction">было</span>
+                <div class="example__scale">
+                  <input class="example__range" type="range" min="0" max="100">
+                </div>
+                <span class="example__restriction">стало</span>
+              </div>
             </div>
           </div>
         </div>
