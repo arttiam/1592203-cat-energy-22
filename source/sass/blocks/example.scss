@@ -3,12 +3,12 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 29px;
-    background: linear-gradient(180deg, transparent 57.1%, $basic-grey2 44.5%);
+    background: linear-gradient(0deg, $basic-grey2, $basic-grey2 462px, transparent 462px);
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 0;
-    background: linear-gradient(0deg, transparent 70.3%, $basic-white 30%),
+    background: linear-gradient(180deg, $basic-white, $basic-white 195px, transparent 195px),
       linear-gradient(270deg, $basic-grey2 50%, $basic-grey 50%);
   }
 }
@@ -33,7 +33,7 @@
   @media (min-width: $desktop-width) {
     grid-row: 1/3;
     grid-column: 2/3;
-    background: linear-gradient(0deg, transparent 70.3%, $basic-white 29.7%),
+    background: linear-gradient(180deg, $basic-white 195px, transparent 195px),
       linear-gradient(90deg, $basic-grey 53.5%, $basic-grey2 48%);
 
     padding-bottom: 0;
@@ -247,11 +247,11 @@
   margin-left: 44px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 38px;
+    margin-left: 68px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 39px;
+    margin-left: 19px;
   }
 }
 
@@ -305,11 +305,11 @@
   left: -20px;
 
   @media (min-width: $tablet-width) {
-    left: 9px;
+    left: 39px;
   }
 
   @media (min-width: $desktop-width) {
-    left: -17px;
+    left: -37px;
     top: 3px;
   }
 }
@@ -342,8 +342,8 @@
     top: -40px;
     outline: 1px solid red;
     width: 100vw;
-    height: calc(100% + 300px);
-    background: linear-gradient(to bottom, $basic-white, $basic-white 227px, $basic-grey2 227px);
+    height: 100%;
+    background: linear-gradient(to bottom, $basic-white, $basic-white 211px, $basic-grey2 211px);
   }
 
   @media (min-width: $desktop-width) {
@@ -351,11 +351,10 @@
       content: "";
       display: block;
       position: absolute;
-      top: -40px;
       outline: 1px solid red;
       width: 100vw;
-      height: calc(100% + 300px);
-      background: linear-gradient(to bottom, $basic-white, $basic-white 235px, $basic-grey2 235px);
+      height: 100%;
+      background: linear-gradient(to bottom, $basic-white, $basic-white 195px, $basic-grey2 195px);
     }
   }
 }
@@ -371,11 +370,11 @@
   top: 2px;
 
   @media (min-width: $tablet-width) {
-    right: 28px;
+    right: 56px;
   }
 
   @media (min-width: $desktop-width) {
-    right: 54px;
+    right: 34px;
   }
 }
 
