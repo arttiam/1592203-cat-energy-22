@@ -256,11 +256,12 @@
 }
 
 .example__choice {
-  width: 280px;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
 
-  @media (min-width: $tablet-width) {
-    width: 650px;
+  @media (min-width: $desktop-width) {
+    margin-left: 20px;
   }
 }
 
@@ -281,7 +282,12 @@
 
 .example__cat {
   max-width: none;
+  height: 100%;
   overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    height: 100%;
+  }
 }
 
 .example__cat img {
@@ -337,7 +343,7 @@
     outline: 1px solid red;
     width: 100vw;
     height: calc(100% + 300px);
-    background: linear-gradient(to bottom, $basic-white, $basic-white 211px, $basic-grey2 211px);
+    background: linear-gradient(to bottom, $basic-white, $basic-white 227px, $basic-grey2 227px);
   }
 
   @media (min-width: $desktop-width) {
@@ -354,7 +360,7 @@
   }
 }
 
-.after-wrapper {
+.after__wrapper {
   position: relative;
   height: 100%;
   overflow: hidden;
