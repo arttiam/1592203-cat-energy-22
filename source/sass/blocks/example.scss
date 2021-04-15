@@ -87,6 +87,7 @@
     grid-column: 1/2;
     min-height: 462px;
     padding-top: 73px;
+    padding-bottom: 20px;
     margin: 0;
   }
 }
@@ -329,8 +330,7 @@
   content: "";
   display: block;
   position: absolute;
-  top: -40px;
-  outline: 1px solid red;
+
   width: 100vw;
   height: calc(100% + 300px);
   background: $basic-grey;
@@ -341,19 +341,18 @@
     content: "";
     display: block;
     position: absolute;
-    top: -40px;
-    outline: 1px solid red;
+
     width: 100vw;
     height: 100%;
-    background: linear-gradient(to bottom, $basic-white, $basic-white 211px, $basic-grey2 211px);
+    background: linear-gradient(to bottom, $basic-white, $basic-white 171px, $basic-grey2 171px);
   }
 
   @media (min-width: $desktop-width) {
     .after::before {
       content: "";
       display: block;
+
       position: absolute;
-      outline: 1px solid red;
       width: 100vw;
       height: 100%;
       background: linear-gradient(to bottom, $basic-white, $basic-white 195px, $basic-grey2 195px);
