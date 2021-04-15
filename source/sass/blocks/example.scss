@@ -1,7 +1,9 @@
 .example {
   background: $basic-grey;
+  padding-top: 26px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 0;
     padding-bottom: 29px;
     background: linear-gradient(0deg, $basic-grey2, $basic-grey2 462px, transparent 462px);
   }
