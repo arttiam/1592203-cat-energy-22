@@ -1,3 +1,11 @@
+.checkbox {
+  margin-bottom: 23px;
+
+  @media (min-width: $desktop-width) {
+    @include col-1-4(80px);
+  }
+}
+
 .checkbox__label {
   position: relative;
   font-family: "Oswald", "Arial", sans-serif;
@@ -7,7 +15,7 @@
   line-height: 18px;
   color: $basic-black;
   text-transform: uppercase;
-  margin-left: 45px;
+  margin-left: 46px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -21,7 +29,7 @@
   width: 30px;
   height: 30px;
   top: -3px;
-  left: -40px;
+  left: -45px;
   border: 1px solid $special-light-grey;
 
   @media (min-width: $tablet-width) {
@@ -29,13 +37,5 @@
     height: 40px;
     top: -5px;
     left: -50px;
-  }
-}
-
-.checkbox {
-  margin-bottom: 20px;
-
-  @media (min-width: $desktop-width) {
-    @include col-1-4(80px);
   }
 }
