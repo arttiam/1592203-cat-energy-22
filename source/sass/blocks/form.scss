@@ -7,6 +7,10 @@
   border: none;
   padding: 0;
   margin: 0 0 40px 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+  }
 }
 
 .form__fieldset--contacts {
@@ -177,15 +181,24 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 29px;
+    margin-right: 17px;
   }
 }
 
 .form__label--weight {
   margin-right: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 21px;
+  }
 }
 
 .form__label--age {
   margin-right: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 19px;
+  }
 }
 
 .form__label--email {
@@ -226,20 +239,18 @@
   }
 }
 
-.form__fieldset--border {
+.form__fieldset--radio {
+  margin-bottom: 25px;
+
   @media (min-width: $tablet-width) {
     border: 1px solid $light-grey;
     margin: 0 auto 0 auto;
-    padding: 25px 30px;
+    padding: 30px 41px 28px 41px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
   }
-}
-
-.form__fieldset--radio {
-  margin-bottom: 25px;
 }
 
 .form__fieldset--checkbox {
@@ -282,6 +293,7 @@
 
 .form__wrapper {
   @media (min-width: $tablet-width) {
+    padding-left: 2px;
     margin-bottom: 70px;
   }
 
