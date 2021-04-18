@@ -26,12 +26,21 @@
   }
 }
 
-.social__link--vkontakte:hover path,
-.social__link--instagram:hover path {
+.social__icon-instagram,
+.social__icon-vkontakte {
+  fill: $special-light-grey4;
+}
+
+.social__icon-facebook {
+  stroke: $special-light-grey4;
+}
+
+.social__link--vkontakte:hover .social__icon-vkontakte,
+.social__link--instagram:hover .social__icon-instagram {
   fill: $special-green;
 }
 
-.social__link--facebook:hover path {
+.social__link--facebook:hover .social__icon-facebook {
   stroke: $special-green;
 }
 
