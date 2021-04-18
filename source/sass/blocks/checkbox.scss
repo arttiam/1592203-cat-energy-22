@@ -45,6 +45,10 @@
   border: 1px solid $special-dark-grey2;
 }
 
+.checkbox__input:focus + .checkbox__label::before {
+  border: 1px solid $special-dark-grey2;
+}
+
 .checkbox__input:checked + .checkbox__label::before {
   background: url("../../img/different/tick.svg") no-repeat;
 

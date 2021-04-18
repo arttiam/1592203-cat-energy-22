@@ -62,23 +62,29 @@
     left: 201px;
     top: 16px;
     border-top: 2px solid $basic-green;
-    width: 100px;
+    width: 100vw;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    transform-origin: left;
+    transform: rotate(180deg);
+    top: 15px;
+    left: -20px;
+    border-top: 2px solid $basic-green;
+    width: 100vw;
   }
 
   @media (min-width: $tablet-width) {
     &::before {
       top: 22px;
       left: 554px;
-      width: 144px;
     }
 
     &::after {
-      position: absolute;
-      content: "";
       top: 22px;
-      left: -69px;
-      border-top: 2px solid $basic-green;
-      width: 30px;
+      left: -39px;
     }
   }
 
@@ -86,13 +92,11 @@
     &::before {
       top: 22px;
       left: 552px;
-      width: 777px;
     }
 
     &::after {
       top: 22px;
-      left: -109px;
-      width: 69px;
+      left: -40px;
     }
   }
 }
@@ -106,7 +110,18 @@
     top: 15px;
     left: 143px;
     border-top: 2px solid $basic-green;
-    width: 158px;
+    width: 100vw;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    transform-origin: left;
+    transform: rotate(180deg);
+    top: 15px;
+    left: -20px;
+    border-top: 2px solid $basic-green;
+    width: 100vw;
   }
 
   @media (min-width: $tablet-width) {
@@ -115,16 +130,11 @@
     &::before {
       top: 22px;
       left: 220px;
-      width: 478px;
     }
 
     &::after {
-      position: absolute;
-      content: "";
       top: 22px;
-      left: -69px;
-      border-top: 2px solid $basic-green;
-      width: 30px;
+      left: -39px;
     }
   }
 
@@ -132,13 +142,11 @@
     &::before {
       top: 22px;
       left: 221px;
-      width: 1108px;
     }
 
     &::after {
       top: 22px;
-      left: -109px;
-      width: 70px;
+      left: -40px;
     }
   }
 }
@@ -152,7 +160,18 @@
     top: 15px;
     left: 164px;
     border: 1px solid $basic-green;
-    width: 136px;
+    width: 100vw;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    transform-origin: left;
+    transform: rotate(180deg);
+    top: 15px;
+    left: -20px;
+    border-top: 2px solid $basic-green;
+    width: 100vw;
   }
 
   @media (min-width: $tablet-width) {
@@ -161,16 +180,11 @@
     &::before {
       top: 21px;
       left: 253px;
-      width: 445px;
     }
 
     &::after {
-      position: absolute;
-      content: "";
-      top: 21px;
-      left: -70px;
-      border-top: 2px solid $basic-green;
-      width: 31px;
+      top: 22px;
+      left: -39px;
     }
   }
 
@@ -180,13 +194,11 @@
     &::before {
       top: 23px;
       left: 250px;
-      width: 1078px;
     }
 
     &::after {
-      top: 23px;
-      left: -109px;
-      width: 70px;
+      top: 22px;
+      left: -40px;
     }
   }
 }
@@ -399,6 +411,7 @@
 }
 
 .form__button:active {
+  background-color: $basic-green2;
   color: $special-basic-white;
 }
 
