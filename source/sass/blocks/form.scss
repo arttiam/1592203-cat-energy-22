@@ -388,11 +388,18 @@
     margin-bottom: 0;
   }
 
-
   @media (min-width: $desktop-width) {
     width: 568px;
     margin-left: 1px;
   }
+}
+
+.form__button:hover {
+  background-color: $basic-green2;
+}
+
+.form__button:active {
+  color: $special-basic-white;
 }
 
 .form__wrapper {
