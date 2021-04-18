@@ -18,6 +18,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 48px;
+  }
 }
 
 .page-header__logo {
@@ -34,14 +38,26 @@
     display: flex;
     justify-content: space-between;
     max-width: $tablet-width;
-    margin: 0 auto 64px auto;
+    margin: 0 auto 58px auto;
     padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: $desktop-width;
-    margin-bottom: 32px;
+    margin-bottom: 20px;
     padding: 0 30px;
+  }
+}
+
+.page-header__logo-image {
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
   }
 }
 

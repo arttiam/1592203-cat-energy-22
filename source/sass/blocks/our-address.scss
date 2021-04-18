@@ -10,25 +10,39 @@
   }
 }
 
-.our-address--font {
-  background-color: $basic-grey;
-}
-
 .our-address__address {
   display: flex;
   padding: 23px 0 26px 0;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
-    padding: 65px 42px 20px 41px;
+    padding: 63px 40px 20px 40px;
     min-height: 201px;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 201px;
     justify-content: space-between;
-    padding: 65px 90px 20px 76px;
+    padding: 62px 90px 20px 76px;
     background-color: $basic-white;
+  }
+}
+
+.our-address--font {
+  background-color: $basic-grey;
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-white;
+  }
+}
+
+.our-address__address--form {
+  @media (min-width: $tablet-width) {
+    padding: 63px 2px 20px 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 62px 90px 20px 76px;
   }
 }
 
@@ -123,4 +137,8 @@
 
 .our-address__invitation-text {
   line-height: 28px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 30px;
+  }
 }

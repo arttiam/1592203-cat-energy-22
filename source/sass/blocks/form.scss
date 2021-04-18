@@ -1,6 +1,10 @@
 .form {
   padding-bottom: 10px;
   margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .form__fieldset {
@@ -15,10 +19,22 @@
 
 .form__fieldset--contacts {
   margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 47px;
+  }
 }
 
 .form__fieldset--comment {
   margin-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 59px;
+  }
 }
 
 .form__legend {
@@ -35,6 +51,7 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    margin-bottom: 76px;
   }
 }
 
@@ -50,16 +67,16 @@
 
   @media (min-width: $tablet-width) {
     &::before {
-      top: 20px;
-      left: 552px;
-      width: 145px;
+      top: 22px;
+      left: 554px;
+      width: 144px;
     }
 
     &::after {
       position: absolute;
       content: "";
-      top: 20px;
-      left: -70px;
+      top: 22px;
+      left: -69px;
       border-top: 2px solid $basic-green;
       width: 30px;
     }
@@ -67,15 +84,15 @@
 
   @media (min-width: $desktop-width) {
     &::before {
-      top: 20px;
-      left: 551px;
-      width: 778px;
+      top: 22px;
+      left: 552px;
+      width: 777px;
     }
 
     &::after {
-      top: 20px;
+      top: 22px;
       left: -109px;
-      width: 70px;
+      width: 69px;
     }
   }
 }
@@ -93,8 +110,10 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+
     &::before {
-      top: 20px;
+      top: 22px;
       left: 220px;
       width: 478px;
     }
@@ -102,8 +121,8 @@
     &::after {
       position: absolute;
       content: "";
-      top: 20px;
-      left: -70px;
+      top: 22px;
+      left: -69px;
       border-top: 2px solid $basic-green;
       width: 30px;
     }
@@ -111,13 +130,13 @@
 
   @media (min-width: $desktop-width) {
     &::before {
-      top: 20px;
+      top: 22px;
       left: 221px;
       width: 1108px;
     }
 
     &::after {
-      top: 20px;
+      top: 22px;
       left: -109px;
       width: 70px;
     }
@@ -137,31 +156,35 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 62px;
+
     &::before {
-      top: 20px;
-      left: 252px;
-      width: 446px;
+      top: 21px;
+      left: 253px;
+      width: 445px;
     }
 
     &::after {
       position: absolute;
       content: "";
-      top: 20px;
+      top: 21px;
       left: -70px;
       border-top: 2px solid $basic-green;
-      width: 30px;
+      width: 31px;
     }
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 63px;
+
     &::before {
-      top: 20px;
+      top: 23px;
       left: 250px;
       width: 1078px;
     }
 
     &::after {
-      top: 20px;
+      top: 23px;
       left: -109px;
       width: 70px;
     }
@@ -181,7 +204,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 29px;
-    margin-right: 17px;
+    margin-right: 16px;
   }
 }
 
@@ -189,7 +212,7 @@
   margin-right: 16px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 21px;
+    margin-right: 19px;
   }
 }
 
@@ -197,16 +220,24 @@
   margin-right: 15px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 19px;
+    margin-right: 16px;
   }
 }
 
 .form__label--email {
   margin-right: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 21px;
+  }
 }
 
 .form__label--tel {
   margin-right: 9px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 16px;
+  }
 }
 
 .form__input {
@@ -233,7 +264,62 @@
   opacity: 1;
 }
 
-.form__fieldset--separator {
+.form__input:hover {
+  border: 1px solid $special-light-grey3;
+}
+
+.form__input:focus {
+  outline: none;
+  border: 1px solid $special-dark-grey;
+}
+
+.form__input--error {
+  border: 1px solid $status-error;
+}
+
+.form__fieldset--separator-name {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 1px;
+    bottom: -11px;
+    left: -19px;
+    background-color: $dark-grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.form__fieldset--separator-radio {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 1px;
+    bottom: 1px;
+    left: -19px;
+    background-color: $dark-grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      display: none;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
   }
@@ -255,6 +341,14 @@
 
 .form__fieldset--checkbox {
   margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 43px;
+  }
 }
 
 .form__legend--size {
@@ -271,11 +365,12 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 60px;
-    margin-bottom: 70px;
+    column-gap: 58px;
+    margin-bottom: 62px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 72px;
     column-gap: 80px;
   }
 }
@@ -286,20 +381,30 @@
   margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
-    padding: 16px 44px;
-    min-width: none;
+    margin-left: 2px;
+    width: 282px;
+    padding: 16px 38px;
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    width: 568px;
+    margin-left: 1px;
   }
 }
 
 .form__wrapper {
   @media (min-width: $tablet-width) {
     padding-left: 2px;
-    margin-bottom: 70px;
+    margin-bottom: 75px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 67px;
   }
 }
 
@@ -329,9 +434,11 @@
   border: 1px solid $light-grey;
   resize: none;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding: 9px 18px 9px 18px;
+    height: 174px;
   }
 }
 
@@ -340,14 +447,65 @@
   opacity: 1;
 }
 
+.form__textarea:hover {
+  border: 1px solid $special-light-grey3;
+}
+
+.form__textarea:focus {
+  outline: none;
+  border: 1px solid $special-dark-grey;
+}
+
 .form__legend-text {
   margin: 0 0 0 0;
   line-height: 16px;
   color: $basic-black;
   text-align: center;
 
-  @media (min-width: $desktop-width) {
-    column-gap: 80px;
+  @media (min-width: $tablet-width) {
+    margin-top: 16px;
     text-align: start;
   }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 80px;
+    margin-top: 18px;
+    text-align: start;
+  }
+}
+
+.form__icon-email {
+  position: absolute;
+  top: 16px;
+  right: 15px;
+  stroke: $special-light-black;
+
+  @media (min-width: $tablet-width) {
+    top: 18px;
+    right: 16px;
+  }
+}
+
+.form__icon-phone {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  fill: $special-light-black;
+  stroke: $special-light-black;
+
+  @media (min-width: $tablet-width) {
+    top: 16px;
+    right: 16px;
+  }
+}
+
+.form__input:focus + svg {
+  fill: $special-green;
+  stroke: $special-green;
+}
+
+
+.form__icon--error {
+  fill: $status-error;
+  stroke: $status-error;
 }
