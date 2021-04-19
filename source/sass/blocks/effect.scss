@@ -198,7 +198,7 @@
   background: url("../img/logo/mobile/logo-cat-slim.svg") 22px 21px no-repeat, $basic-grey;
 
   @media (min-width: $tablet-width) {
-    background: url("../img/logo/logo-cat-slim-table.svg") no-repeat;
+    background: url("../img/logo/logo-cat-slim-table.svg") no-repeat, $basic-grey;
     background-size: 200px 213px;
     background-position: 446px 80px;
   }
@@ -213,7 +213,7 @@
   background: url("../img/logo/mobile/logo-cat-fat.svg") 13px 24px no-repeat, $basic-grey;
 
   @media (min-width: $tablet-width) {
-    background: url("../img/logo/logo-cat-fat-table.svg") no-repeat;
+    background: url("../img/logo/logo-cat-fat-table.svg") no-repeat, $basic-grey;
     background-size: 268px 200px;
     background-position: 412px 91px;
   }

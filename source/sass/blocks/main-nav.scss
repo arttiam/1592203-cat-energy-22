@@ -58,11 +58,11 @@
     line-height: 24px;
     padding: 0;
 
-    &:hover {
+    &[href]:hover {
       opacity: 0.6;
     }
 
-    &:active {
+    &[href]:active {
       opacity: 0.3;
     }
   }
