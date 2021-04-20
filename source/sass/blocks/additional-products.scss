@@ -24,13 +24,14 @@
   margin: 0 0 14px 0;
   padding-bottom: 35px;
   border-bottom: 1px solid $special-light-grey3;
+  width: max-content;
 
 
   &::before {
     position: absolute;
     content: "";
     top: 15px;
-    left: 247px;
+    left: calc(100% + 22px);
     border: 1px solid $basic-green;
     width: 100vw;
   }
@@ -55,7 +56,7 @@
 
     &::before {
       top: 22px;
-      left: 374px;
+      left: calc(100% + 36px);
     }
 
     &::after {
