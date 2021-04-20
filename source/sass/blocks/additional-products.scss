@@ -7,7 +7,7 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 245px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 80px;
     margin-bottom: 87px;
   }
@@ -31,7 +31,7 @@
     position: absolute;
     content: "";
     top: 15px;
-    left: calc(100% + 22px);
+    left: calc(100% + 20px);
     border: 1px solid $basic-green;
     width: 100vw;
   }
@@ -56,7 +56,7 @@
 
     &::before {
       top: 22px;
-      left: calc(100% + 36px);
+      left: calc(100% + 40px);
     }
 
     &::after {
@@ -74,7 +74,7 @@
 
     &::before {
       top: 23px;
-      left: 373px;
+      left: calc(100% + 40px);
     }
 
     &::after {
@@ -145,6 +145,7 @@
     border-left: none;
     border-right: none;
     padding: 15px 0 15px 0;
+    min-width: 895px;
   }
 }
 
