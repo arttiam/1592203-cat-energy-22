@@ -145,7 +145,6 @@
     border-left: none;
     border-right: none;
     padding: 15px 0 15px 0;
-    min-width: 895px;
   }
 }
 
@@ -215,7 +214,8 @@
   @media (min-width: $desktop-width) {
     background: url("../../img/logo/icon-gift.svg") 50% 55px no-repeat,
       url("../../img/background/additional-products-desktop.png") 80% no-repeat;
-    padding: 186px 41px 41px 41px;
+    padding: 186px 39px 41px 39px;
+
   }
 }
 
