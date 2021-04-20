@@ -138,3 +138,11 @@
     margin: 0;
   }
 }
+
+.page-header__logo-wrapper .container {
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+}

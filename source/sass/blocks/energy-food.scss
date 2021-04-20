@@ -12,7 +12,13 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
+    max-width: $tablet-width;
+    margin: 0 auto;
     padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: $desktop-width;
   }
 }
 
@@ -20,7 +26,6 @@
   background: url("../img/different/plus-mobile.png") 50% 25px no-repeat;
   text-align: center;
   padding: 79px 20px 23px 20px;
-  border-top: 1px solid $special-light-grey2;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -92,6 +97,7 @@
 }
 
 .energy-food__more-wrapper {
+  border-top: 1px solid $special-light-grey2;
   border-bottom: 1px solid $dark-grey;
 
   @media (min-width: $tablet-width) {
