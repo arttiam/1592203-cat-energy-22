@@ -26,6 +26,18 @@
   }
 }
 
+.page-main__title--catalog {
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 84px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 85px;
+  }
+}
+
 .page-main__text {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
