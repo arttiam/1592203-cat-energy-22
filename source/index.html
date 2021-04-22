@@ -14,9 +14,8 @@
           <div class="container">
             <a href="index.html" class="page-header__logo">
               <picture>
-                <source srcset="img/logo/logo-desktop-cat.svg" media="(min-width: 1440px)">
+                <source srcset="img/logo/logo-desktop-cat.svg" media="(min-width: 1280px)">
                 <source srcset="img/logo/logo-tablet-cat.svg" media="(min-width: 768px)">
-                <source srcset="img/logo/logo-mobile-cat.svg" media="(min-width: 320px)">
                 <img class="page-header__logo-image" src="img/logo/logo-mobile-cat.svg" width="191" height="37" alt="логотип мобильный">
               </picture>
             </a>
@@ -51,7 +50,7 @@
             <source srcset="img/logo/desktop/logo-product.png 1x, img/logo/desktop/logo-product2x.png 2x" media="(min-width: 1280px)">
             <source srcset="img/logo/tablet/logo-product.jpg 1x, img/logo/tablet/logo-product2x.jpg 2x" media="(min-width: 768px)">
             <source srcset="img/logo/mobile/logo-product.png 1x, img/logo/mobile/logo-product2x.png 2x" media="(min-width: 320px)">
-            <img class="functional-food__logo" src="img/logo/logo-product.png" alt="Логотип продукта" width="280" height="270">
+            <img class="functional-food__logo" src="img/logo/logo-product.png" srcset="img/logo/mobile/logo-product2x.png 2x" alt="Логотип продукта" width="280" height="270">
           </picture>
           <a href="form.html" class="button functional-food__link">Подобрать программу</a>
         </div>
@@ -135,17 +134,15 @@
               <div class="example__cat-image">
                 <div class="example__cat before">
                   <picture>
-                    <source srcset="img/different/cat-fat.png 1x, img/different/cat-fat2x.png 2x" media="(min-width: 768px)">
-                    <source srcset="img/different/mobile/before-mobile.png 1x, img/different/mobile/before-mobile2x.png 2x," media="(min-width: 320px)">
-                    <img src="img/different/cat-fat.png">
+                    <source srcset="img/different/mobile/before-mobile.png 1x, img/different/mobile/before-mobile2x.png 2x," media="(min-width: 320px) and (max-width: 767px)">
+                    <img src="img/different/cat-fat.png" srcset="img/different/cat-fat2x.png 2x" alt="упитынный кот">
                   </picture>
                 </div>
                 <div class="example__cat after">
                   <div class="after__wrapper">
                     <picture>
-                      <source srcset="img/different/cat-skinny.png" media="(min-width: 768px)">
-                      <source srcset="img/different/mobile/after-mobile.png 1x, img/different/mobile/after-mobile2x.png 2x" media="(min-width: 320px)">
-                      <img src="img/different/cat-skinny.png">
+                      <source srcset="img/different/mobile/after-mobile.png 1x, img/different/mobile/after-mobile2x.png 2x" media="(min-width: 320px) and (max-width: 767px)">
+                      <img src="img/different/cat-skinny.png" srcset="img/different/cat-skinny2x.png 2x" alt="худой кот">
                     </picture>
                   </div>
                 </div>
@@ -177,6 +174,13 @@
             <div class="our-address__map">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1617785310401!5m2!1sru!2sru" width="100%" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
+            <div class="our-address__map-wrapper">
+              <picture>
+                <source srcset="../img/background/background-desktop.png 1x, ../img/background/background-desktop2x.png 2x" media="(min-width: 1280px)">
+                <source srcset="../img/background/background-tablet.png 1x, ../img/background/background-tablet2x.png 2x" media="(min-width: 768px)">
+                <img src="../img/background/location-mobile.png" srcset="../img/background/location-mobile2x.png 2x" alt="карта как нас найти">
+              </picture>
+          </div>
           </div>
         </div>
       </section>
