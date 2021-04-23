@@ -5,7 +5,6 @@ let iconPhone = document.querySelector(".form__icon-phone");
 
 
 btnSubmit.addEventListener("click", function(evt) {
-  console.log("111");
 
   inputTexts.forEach(function(inputText, i, inputTexts) {
 

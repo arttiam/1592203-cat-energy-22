@@ -292,17 +292,31 @@
 .form__fieldset--separator-name {
   position: relative;
 
-  &::after {
+  &::before {
     position: absolute;
     content: "";
-    width: 320px;
+    width: 100vw;
     height: 1px;
     bottom: -11px;
-    left: -19px;
+    background-color: $dark-grey;
+  }
+
+  &::after {
+    position: absolute;
+    transform-origin: left;
+    transform: rotate(180deg);
+    content: "";
+    width: 100vw;
+    height: 1px;
+    bottom: -11px;
     background-color: $dark-grey;
   }
 
   @media (min-width: $tablet-width) {
+    &::before {
+      display: none;
+    }
+
     &::after {
       display: none;
     }
@@ -316,10 +330,22 @@
 .form__fieldset--separator-radio {
   position: relative;
 
-  &::after {
+  &::before {
     position: absolute;
     content: "";
-    width: 320px;
+    width: 100vw;
+    height: 1px;
+    bottom: 1px;
+    left: -19px;
+    background-color: $dark-grey;
+  }
+
+  &::after {
+    position: absolute;
+    transform-origin: left;
+    transform: rotate(180deg);
+    content: "";
+    width: 100vw;
     height: 1px;
     bottom: 1px;
     left: -19px;
@@ -327,6 +353,10 @@
   }
 
   @media (min-width: $tablet-width) {
+    &::before {
+      display: none;
+    }
+
     &::after {
       display: none;
     }

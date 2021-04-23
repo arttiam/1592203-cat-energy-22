@@ -92,6 +92,14 @@
   }
 }
 
+.main-nav--closed {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
 .main-nav__toggle {
   position: absolute;
   top: -65px;
