@@ -3,6 +3,8 @@
 }
 
 .our-address__address-wrapper {
+  z-index: 2;
+
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 96px;
@@ -115,19 +117,37 @@
 }
 
 .our-address__map {
-  background: url("../img/background/location-mobile.png");
-  min-height: min-content;
+  position: relative;
+  min-height: 362px;
   padding: 0;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
-    background: url("../img/background/background-tablet.png") no-repeat;
+    height: 400px;
+  }
+}
+
+.our-address__map-wrapper {
+  position: absolute;
+  height: 362px;
+  bottom: 0;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    bottom: 0;
     height: 400px;
   }
 
   @media (min-width: $desktop-width) {
-    background: url("../img/background/background-desktop.png") no-repeat;
     height: 400px;
+    top: 0;
   }
+}
+
+.our-address__map-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .our-address__map iframe {

@@ -103,6 +103,12 @@
       background: linear-gradient($basic-green 100%, transparent 0%),
         url("../img/background/header-cat-desktop.jpg");
       background-size: cover, cover;
+
+      @media (min-resolution: 2dppx) {
+        background: linear-gradient($basic-green 100%, transparent 0%),
+          url("../img/background/header-cat-desktop2x.jpg");
+        background-size: cover, cover;
+      }
     }
   }
 }
@@ -110,10 +116,17 @@
 
 .page-header__wrapper-food {
   background:
-    url("../img/background/fon-cat.svg") repeat-x,
-    url("../../img/background/foot-header-cat.jpg") no-repeat top center,
+    url("../img/background/fill-cat.svg") repeat-x,
+    url("../img/background/foot-header-cat.jpg") no-repeat top center,
     linear-gradient(180deg, $special-dark-grey 63%, transparent 37%);
 
+  @media (min-resolution: 2dppx) {
+    background:
+      url("../img/background/fill-cat.svg") repeat-x,
+      url("../img/background/foot-header-cat2x.jpg") no-repeat top center,
+      linear-gradient(180deg, $special-dark-grey 63%, transparent 37%);
+    background-size: auto, 320px 302px, auto;
+  }
 
   @media (min-width: $tablet-width) {
     background: none;
