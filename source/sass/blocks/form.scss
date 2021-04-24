@@ -289,74 +289,21 @@
   border: 1px solid $status-error;
 }
 
-.form__fieldset--separator-name {
+.form__fieldset--separator {
   position: relative;
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 100vw;
-    height: 1px;
-    bottom: -11px;
-    background-color: $dark-grey;
-  }
 
   &::after {
     position: absolute;
-    transform-origin: left;
-    transform: rotate(180deg);
     content: "";
     width: 100vw;
+    transform: translateX(-50%);
     height: 1px;
-    bottom: -11px;
+    bottom: 1px;
+    left: 50%;
     background-color: $dark-grey;
   }
 
   @media (min-width: $tablet-width) {
-    &::before {
-      display: none;
-    }
-
-    &::after {
-      display: none;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 0;
-  }
-}
-
-.form__fieldset--separator-radio {
-  position: relative;
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 100vw;
-    height: 1px;
-    bottom: 1px;
-    left: -19px;
-    background-color: $dark-grey;
-  }
-
-  &::after {
-    position: absolute;
-    transform-origin: left;
-    transform: rotate(180deg);
-    content: "";
-    width: 100vw;
-    height: 1px;
-    bottom: 1px;
-    left: -19px;
-    background-color: $dark-grey;
-  }
-
-  @media (min-width: $tablet-width) {
-    &::before {
-      display: none;
-    }
-
     &::after {
       display: none;
     }
