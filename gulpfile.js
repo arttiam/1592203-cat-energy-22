@@ -54,7 +54,7 @@ exports.server = server;
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series(styles));
   gulp.watch("source/js/*.js", gulp.series(scripts));
-  gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/*.html", gulp.series(html, reload));
 }
 
 //HTML
@@ -89,14 +89,14 @@ const optimizeImages = () => {
     .pipe(gulp.dest("build/img"))
 }
 
-exports.images = optimizeImages;
+exports.optimizeImages = optimizeImages;
 
 const copyImages = () => {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(gulp.dest("build/img"))
 }
 
-exports.images = copyImages;
+exports.copyImages = copyImages;
 
 //webP
 
@@ -129,6 +129,7 @@ const copy = (done) => {
     "source/*.ico",
     "source/img/**/*.svg",
     "!source/img/icons/*.svg",
+    "source/*.webmanifest",
   ], {
     base: "source"
   })
