@@ -39,11 +39,14 @@
 }
 
 .our-address__address--form {
+  background-color: $basic-grey;
+
   @media (min-width: $tablet-width) {
     padding: 63px 2px 20px 2px;
   }
 
   @media (min-width: $desktop-width) {
+    background-color: $basic-white;
     padding: 62px 90px 20px 76px;
   }
 }
@@ -151,6 +154,10 @@
 }
 
 .our-address__map iframe {
+  width: 100%;
+  border: 0;
+  height: 362px;
+
   @media (min-width: $tablet-width) {
     height: 400px;
   }
