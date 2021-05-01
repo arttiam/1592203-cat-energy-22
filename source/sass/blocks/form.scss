@@ -17,6 +17,10 @@
   }
 }
 
+.form__fieldset--first {
+  margin-bottom: 28px;
+}
+
 .form__fieldset--contacts {
   margin-bottom: 10px;
 
@@ -284,6 +288,7 @@
     transform: translateX(-50%);
     bottom: 1px;
     height: 1px;
+
     left: 50%;
     background-color: $dark-grey;
   }
