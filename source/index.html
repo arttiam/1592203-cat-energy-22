@@ -144,15 +144,19 @@
               <div class="example__cat-image">
                 <div class="example__cat before">
                   <picture>
-                    <source srcset="img/different/mobile/before-mobile.png 1x, img/different/mobile/before-mobile2x.png 2x" media="(min-width: 320px) and (max-width: 767px)">
-                    <img src="img/different/cat-fat.png" srcset="img/different/cat-fat2x.png 2x" alt="упитынный кот">
+                    <source type="image/webp" srcset="img/different/cat-fat.webp 1x, img/different/cat-fat2x.webp 2x" media="(min-width: 768px)">
+                    <source type="image/webp" srcset="img/different/mobile/before-mobile.webp 1x, img/different/mobile/before-mobile2x.webp 2x" media="(min-width: 320px)">
+                    <source srcset="img/different/cat-fat.png 1x, img/different/cat-fat2x.png 2x" media="(min-width: 320px) and (max-width: 767px)">
+                    <img src="img/different/mobile/before-mobile.png" srcset="img/different/mobile/before-mobile2x.png 2x" alt="упитынный кот">
                   </picture>
                 </div>
                 <div class="example__cat after">
                   <div class="after__wrapper">
                     <picture>
-                      <source srcset="img/different/mobile/after-mobile.png 1x, img/different/mobile/after-mobile2x.png 2x" media="(min-width: 320px) and (max-width: 767px)">
-                      <img src="img/different/cat-skinny.png" srcset="img/different/cat-skinny2x.png 2x" alt="худой кот">
+                      <source type="image/webp" srcset="img/different/cat-skinny.webp 1x, img/different/cat-skinny2x.webp 2x" media="(min-width: 768px)">
+                      <source type="image/webp" srcset="img/different/mobile/after-mobile.webp 1x, img/different/mobile/after-mobile2x.webp 2x" media="(min-width: 320px)">
+                      <source srcset="img/different/cat-skinny.png 1x, img/different/cat-skinny2x.png 2x" media="(max-width: 768px)">
+                      <img src="img/different/mobile/after-mobile.png" srcset="img/different/mobile/after-mobile2x.png 2x" alt="худой кот">
                     </picture>
                   </div>
                 </div>
@@ -186,6 +190,9 @@
             </div>
             <div class="our-address__map-wrapper">
               <picture>
+                <source type="image/webp" srcset="/img/background/background-desktop.webp 1x, /img/background/background-desktop2x.webp 2x" media="(min-width: 1280px)">
+                <source type="image/webp" srcset="/img/background/background-tablet.webp 1x, /img/background/background-tablet2x.webp 2x" media="(min-width: 768px)">
+                <source type="image/webp" srcset="img/background/location-mobile.webp 1x, img/background/location-mobile2x.webp 2x" media="(min-width: 320px)">
                 <source srcset="/img/background/background-desktop.png 1x, /img/background/background-desktop2x.png 2x" media="(min-width: 1280px)">
                 <source srcset="/img/background/background-tablet.png 1x, /img/background/background-tablet2x.png 2x" media="(min-width: 768px)">
                 <img class="our-address__map-image" src="img/background/location-mobile.png" srcset="img/background/location-mobile2x.png 2x" alt="карта как нас найти">
