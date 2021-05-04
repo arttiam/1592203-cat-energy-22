@@ -19,6 +19,10 @@
 
 .form__fieldset--first {
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 46px;
+  }
 }
 
 .form__fieldset--contacts {
