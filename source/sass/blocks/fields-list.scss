@@ -15,8 +15,17 @@
   }
 }
 
-.fields-list__item--last {
-  margin-bottom: 25px;
+.fields-list__item-checkbox {
+  margin-bottom: 23px;
+}
+
+.fields-list__item-radio {
+  margin-bottom: 23px;
+}
+
+.fields-list__item-radio:last-child,
+.fields-list__item-checkbox:last-child {
+  margin-bottom: 0;
 }
 
 .fields-list--checkbox {
@@ -46,4 +55,8 @@
   @media (min-width: $desktop-width) {
     @include col-2-2(80px);
   }
+}
+
+.fields-list__item:last-child {
+  margin-bottom: 0;
 }

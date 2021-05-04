@@ -58,13 +58,3 @@
 .radio__input:disabled + .radio__label::before {
   opacity: 0.3;
 }
-
-.radio {
-  margin-bottom: 23px;
-}
-
-.radio--end {
-  @media (min-width: $tablet-width) {
-    margin-bottom: 0;
-  }
-}
