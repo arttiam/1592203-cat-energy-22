@@ -2,6 +2,7 @@ let btnHamburger = document.querySelector(".main-nav__toggle");
 let mainMenu = document.querySelector(".main-nav__list");
 
 btnHamburger.classList.remove("main-nav__toggle--closed");
+btnHamburger.classList.remove("main-nav__toggle--error");
 mainMenu.classList.add("main-nav--closed");
 
 btnHamburger.addEventListener("click", function(){
