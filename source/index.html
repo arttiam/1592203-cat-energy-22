@@ -162,11 +162,12 @@
                 </div>
               </div>
               <div class="example__selecting-result">
-                <span class="example__restriction">было</span>
+                <span class="example__restriction" tabindex="0">было</span>
                 <div class="example__scale">
-                  <input class="example__range" type="range" min="0" max="100" oninput="updateImageWidth(this.value);">
+                  <input class="example__range" type="range" min="0" max="100" id="range" oninput="updateImageWidth(this.value);">
+                  <label class="visually-hidden" for="range"></label>
                 </div>
-                <span class="example__restriction">стало</span>
+                <span class="example__restriction" tabindex="0">стало</span>
               </div>
             </div>
           </div>

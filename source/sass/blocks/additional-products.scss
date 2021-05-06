@@ -77,53 +77,6 @@
   }
 }
 
-/*.additional-products__title-wrapper {
-  display: inline-block;
-  position: relative;
-  margin: 0;
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: 21px;
-    left: calc(100% + 20px);
-    border: 1px solid $basic-green;
-    width: 100vw;
-  }
-
-  @media (min-width: $tablet-width) {
-    &::before {
-      top: 31px;
-      left: calc(100% + 40px);
-    }
-
-    &::after {
-      position: absolute;
-      content: "";
-      transform-origin: left;
-      transform: rotate(180deg);
-      top: 31px;
-      left: -37px;
-      border-top: 2px solid $basic-green;
-      width: 100vw;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 80px;
-
-    &::before {
-      top: 23px;
-      left: calc(100% + 40px);
-    }
-
-    &::after {
-      top: 23px;
-      left: -40px;
-    }
-  }
-}*/
-
 .additional-products__caption {
   line-height: 16px;
   color: $special-light-black;
@@ -248,42 +201,48 @@
   justify-content: center;
   align-items: flex-end;
   background:  url("../img/logo/icon-gift.svg") 100px 56px no-repeat,
-    url("../img/background/additional-products.png");
+    url("../img/background/additional-products.png"),
+    $special-green;
   min-height: 289px;
   padding-top: 55px;
   padding-bottom: 41px;
 
   @media (min-resolution: 2dppx) {
     background:  url("../img/logo/icon-gift.svg") 100px 56px no-repeat,
-      url("../img/background/additional-products2x.png");
-    background-size: auto, 280px 289px;
+      url("../img/background/additional-products2x.png"),
+      $special-green;
+    background-size: auto, 280px 289px, auto;
   }
 
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
     align-items: flex-start;
     background: url("../img/logo/icon-gift.svg") 78px 56px no-repeat,
-      url("../img/background/cat-green.png") no-repeat;
+      url("../img/background/cat-green.png") no-repeat,
+      $special-green;
     min-height: 200px;
     padding: 72px 118px 58px 20px;
 
     @media (min-resolution: 2dppx) {
       background: url("../img/logo/icon-gift.svg") 78px 56px no-repeat,
-        url("../img/background/cat-green2x.png") no-repeat;
-      background-size: auto, 708px 200px;
+        url("../img/background/cat-green2x.png") no-repeat,
+        $special-green;
+      background-size: auto, 708px 200px, auto;
     }
   }
 
   @media (min-width: $desktop-width) {
     background: url("../../img/logo/icon-gift.svg") 50% 55px no-repeat,
-      url("../../img/background/additional-products-desktop.png") 80% no-repeat;
+      url("../../img/background/additional-products-desktop.png") 80% no-repeat,
+      $special-green;
     padding: 186px 39px 41px 39px;
 
 
     @media (min-resolution: 2dppx) {
       background: url("../../img/logo/icon-gift.svg") 50% 55px no-repeat,
-        url("../../img/background/additional-products-desktop2x.png") 80% no-repeat;
-      background-size: auto, 245px 289px;
+        url("../../img/background/additional-products-desktop2x.png") 80% no-repeat,
+        $special-green;
+      background-size: auto, 245px 289px, auto;
     }
   }
 }
